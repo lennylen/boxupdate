@@ -436,7 +436,7 @@
         <setting type="bool" name="skin.confluence.FirstTimeRun">true</setting>
         <setting type="bool" name="skin.confluence.HideFilenameFlagging">false</setting>
         <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
-        <setting type="bool" name="skin.confluence.hwy2015.UseCustomBackground">true</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.UseCustomBackground">false</setting>
         <setting type="bool" name="skin.confluence.hwy2015.HideBackGroundFanart">false</setting>
         <setting type="bool" name="skin.confluence.hwy2015.ShowBackgroundVideo">false</setting>
         <setting type="bool" name="skin.confluence.hwy2015.ShowBackgroundVis">false</setting>
