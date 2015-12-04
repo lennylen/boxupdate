@@ -15,7 +15,7 @@
     <audiooutput>
         <ac3passthrough default="true">true</ac3passthrough>
         <ac3transcode default="true">false</ac3transcode>
-        <audiodevice default="true">DIRECTSOUND:default</audiodevice>
+        <audiodevice>DIRECTSOUND:{AA4681AA-F039-467A-BD03-09BBAC8E5F5E}</audiodevice>
         <channels default="true">1</channels>
         <config default="true">2</config>
         <dtshdpassthrough default="true">false</dtshdpassthrough>
@@ -24,7 +24,7 @@
         <guisoundmode default="true">1</guisoundmode>
         <maintainoriginalvolume default="true">true</maintainoriginalvolume>
         <passthrough default="true">false</passthrough>
-        <passthroughdevice default="true">DIRECTSOUND:default</passthroughdevice>
+        <passthroughdevice>DIRECTSOUND:{31A7DE77-0DF1-4752-85C3-236611265ECF}</passthroughdevice>
         <processquality default="true">30</processquality>
         <samplerate default="true">48000</samplerate>
         <stereoupmix default="true">false</stereoupmix>
@@ -55,7 +55,7 @@
         <extralogging default="true">true</extralogging>
         <screenshotpath default="true"></screenshotpath>
         <setextraloglevel default="true">32768</setextraloglevel>
-        <showloginfo>true</showloginfo>
+        <showloginfo default="true">false</showloginfo>
     </debug>
     <disc>
         <playback default="true">0</playback>
@@ -69,7 +69,7 @@
         <daystodisplay default="true">3</daystodisplay>
         <epgupdate default="true">120</epgupdate>
         <hidenoinfoavailable default="true">true</hidenoinfoavailable>
-        <ignoredbforclient default="true">false</ignoredbforclient>
+        <ignoredbforclient>true</ignoredbforclient>
         <preventupdateswhileplayingtv default="true">false</preventupdateswhileplayingtv>
         <selectaction default="true">2</selectaction>
     </epg>
@@ -86,8 +86,8 @@
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <addonupdates default="true">0</addonupdates>
-        <systemtotaluptime>238</systemtotaluptime>
-        <settinglevel>1</settinglevel>
+        <systemtotaluptime>41</systemtotaluptime>
+        <settinglevel>3</settinglevel>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -104,7 +104,7 @@
     <locale>
         <audiolanguage default="true">original</audiolanguage>
         <charset default="true">DEFAULT</charset>
-        <country default="true">USA (12h)</country>
+        <country>Canada</country>
         <keyboardlayouts default="true">English QWERTY</keyboardlayouts>
         <language default="true">resource.language.en_gb</language>
         <longdateformat default="true">regional</longdateformat>
@@ -118,10 +118,10 @@
         <use24hourclock default="true">regional</use24hourclock>
     </locale>
     <lookandfeel>
-        <enablerssfeeds>true</enablerssfeeds>
+        <enablerssfeeds>false</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
-        <skin default="true">skin.confluence</skin>
+        <skin>skin.confluence.hwy2015</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
@@ -369,18 +369,18 @@
     </videoplayer>
     <videoscreen>
         <blankdisplays default="true">false</blankdisplays>
-        <fakefullscreen default="true">true</fakefullscreen>
+        <fakefullscreen default="true">false</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <monitor default="true">Default</monitor>
         <preferedstereoscopicmode default="true">100</preferedstereoscopicmode>
-        <resolution default="true">16</resolution>
-        <screen default="true">0</screen>
-        <screenmode default="true">DESKTOP</screenmode>
+        <resolution>17</resolution>
+        <screen>1</screen>
+        <screenmode>10080000600060.00000pstd</screenmode>
         <stereoscopicmode default="true">0</stereoscopicmode>
         <vsync default="true">2</vsync>
     </videoscreen>
     <weather>
-        <addon default="true"></addon>
+        <addon>weather.yahoo</addon>
         <currentlocation default="true">1</currentlocation>
     </weather>
     <window>
@@ -389,7 +389,7 @@
     </window>
     <audio>
         <mute>false</mute>
-        <fvolumelevel>1.000000</fvolumelevel>
+        <fvolumelevel>0.577777</fvolumelevel>
     </audio>
     <resolutions />
     <defaultvideosettings>
@@ -432,16 +432,44 @@
         <setting type="bool" name="skin.confluence.HomeMenuNoVideosButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoMusicButton">false</setting>
         <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">false</setting>
-        <setting type="bool" name="skin.confluence.HideFilenameFlagging">false</setting>
-        <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
         <setting type="bool" name="skin.confluence.AutoScroll">false</setting>
         <setting type="bool" name="skin.confluence.FirstTimeRun">true</setting>
-        <setting type="bool" name="skin.confluence.ActivateTvTunes">false</setting>
-        <setting type="bool" name="skin.confluence.HideVisualizationFanart">false</setting>
-        <setting type="bool" name="skin.confluence.Show_SlideShow_Paused">false</setting>
-        <setting type="bool" name="skin.confluence.WindowedTrailer">false</setting>
+        <setting type="bool" name="skin.confluence.HideFilenameFlagging">false</setting>
+        <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.UseCustomBackground">true</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HideBackGroundFanart">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.DebugGrid">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HideDebugInfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.AutoScroll">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.Show_SlideShow_Paused">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.WindowedTrailer">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HideFilenameFlagging">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.ActivateTvTunes">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.homepageVideoinfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.homepageMusicinfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.homepageWeatherinfo">true</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomepageHideRecentlyAddedVideo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomepageHideRecentlyAddedAlbums">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoMovieButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoTVShowButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoMusicButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoPicturesButton">true</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoProgramsButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HideVisualizationFanart">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.FirstTimeRun">true</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuVideos">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuPrograms">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuMusic">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuStatus">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuSystem">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.View508HideInfo">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton1">plugin.video.prime_instant</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton3"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton4"></setting>
@@ -461,9 +489,69 @@
         <setting type="string" name="skin.confluence.HomeProgramButton3"></setting>
         <setting type="string" name="skin.confluence.HomeProgramButton4"></setting>
         <setting type="string" name="skin.confluence.HomeProgramButton5"></setting>
-        <setting type="string" name="skin.confluence.LyricScript_Path"></setting>
-        <setting type="string" name="skin.confluence.Startup_Playlist_Path"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton6"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerSize"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathNF"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathFO"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathDrag"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathClick"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomBackgroundPath">C:\Users\Intel\AppData\Roaming\Kodi\addons\skin.confluence.hwy2015\backgrounds\Moon Horizon.jpg</setting>
+        <setting type="string" name="skin.confluence.hwy2015.Startup_Playlist_Path"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.LyricScript_Path"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton1">script.tvguidetecbox</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton2">plugin.video.dextertv</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton3">plugin.video.channelpear</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton4">plugin.video.MoneySports</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton5">plugin.video.SportsDevil</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton6">plugin.video.genesis</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton7">plugin.video.1channel</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton8">plugin.video.movie4k</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton9">plugin.video.i4atv</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton10"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton11"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton12"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton13"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton14"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton15"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton16"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton17"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton18"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton19"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton20"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton21"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton22"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton23"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton24"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton25"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton1">plugin.audio.radioreference</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton2">plugin.audio.radio_de</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton3">plugin.audio.soundcloud</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton4">plugin.audio.di.fm</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton5">plugin.video.itunes_podcasts</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton6"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton7"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton8"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton9"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton10"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton1"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton2"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton3"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton4"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton5"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton6"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton7"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton8"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton9"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton10"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton1">plugin.video.xbmchubmaintenance</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton2">script.navi-x</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton3"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton4"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton5"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton6"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton7"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton8"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton9"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton10"></setting>
     </skinsettings>
     <viewstates>
         <musicfiles>
@@ -503,16 +591,16 @@
             <sortattributes>0</sortattributes>
         </pictures>
         <programs>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>1</sortattributes>
+        </programs>
+        <videofiles>
             <viewmode>720896</viewmode>
             <sortmethod>1</sortmethod>
             <sortorder>1</sortorder>
             <sortattributes>0</sortattributes>
-        </programs>
-        <videofiles>
-            <viewmode>65586</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
-            <sortattributes>1</sortattributes>
         </videofiles>
         <videonavactors>
             <viewmode>65536</viewmode>
