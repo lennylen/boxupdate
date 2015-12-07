@@ -13,4 +13,7 @@
 
 <addon id="script.module.torrent.ts" version="0.6.0.28a" data_version="0.0.1"></addon>
 
+<addon id="plugin.video.CanTVLive" version="2.0" data_version="0.0.1"></addon>
+
+
 </addons>
