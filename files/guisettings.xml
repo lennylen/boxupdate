@@ -118,7 +118,7 @@
         <use24hourclock default="true">regional</use24hourclock>
     </locale>
     <lookandfeel>
-        <enablerssfeeds default="true">true</enablerssfeeds>
+        <enablerssfeeds>false</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
         <skin>skin.confluence.hwy2015</skin>
