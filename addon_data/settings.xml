@@ -9,7 +9,7 @@
     <setting id="logos.source" value="0" />
     <setting id="notifications.enabled" value="true" />
     <setting id="skin" value="iVue Red" />
-    <setting id="xmltv.interval" value="1" />
+    <setting id="xmltv.interval" value="0" />
     <setting id="xmltv.type" value="4" />
     <setting id="xmltv.type_select" value="TECBOX (stalkeriptv)" />
 </settings>
