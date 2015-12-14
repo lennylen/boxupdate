@@ -15,7 +15,7 @@
     <audiooutput>
         <ac3passthrough default="true">true</ac3passthrough>
         <ac3transcode default="true">false</ac3transcode>
-        <audiodevice>WASAPI:{8469B44C-0B66-497D-BBF1-AC785ADB323B}</audiodevice>
+        <audiodevice default="true">AUDIOTRACK:AudioTrack</audiodevice>
         <channels default="true">1</channels>
         <config default="true">2</config>
         <dtshdpassthrough default="true">false</dtshdpassthrough>
@@ -24,7 +24,7 @@
         <guisoundmode default="true">1</guisoundmode>
         <maintainoriginalvolume default="true">true</maintainoriginalvolume>
         <passthrough default="true">false</passthrough>
-        <passthroughdevice>DIRECTSOUND:{278BC73F-279B-4163-8CBA-B649460329D5}</passthroughdevice>
+        <passthroughdevice default="true">AUDIOTRACK:AudioTrack</passthroughdevice>
         <processquality default="true">30</processquality>
         <samplerate default="true">48000</samplerate>
         <stereoupmix default="true">false</stereoupmix>
@@ -125,7 +125,7 @@
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
-        <soundskin default="true">resource.uisounds.confluence</soundskin>
+        <soundskin>SKINDEFAULT</soundskin>
         <startupwindow default="true">10000</startupwindow>
     </lookandfeel>
     <masterlock>
@@ -689,6 +689,12 @@
         <setting type="bool" name="skin.confluence.bossanova808.isengard.ShowBackgroundVis">false</setting>
         <setting type="bool" name="skin.confluence.SmartShortcuts.plex">false</setting>
         <setting type="bool" name="skin.confluence.EnableNextAiredNotifications">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.SmartShortcuts.emby">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.SmartShortcuts.playlists">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.SmartShortcuts.favorites">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.SmartShortcuts.plex">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.SmartShortcuts.netflix">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.EnableNextAiredNotifications">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
@@ -1529,6 +1535,9 @@
         <setting type="string" name="skin.confluence.bossanova808.isengard.SkinHelper.CustomStudioImagesPath"></setting>
         <setting type="string" name="skin.confluence.SkinHelper.RandomFanartDelay"></setting>
         <setting type="string" name="skin.confluence.hwy2015.SkinHelper.RandomFanartDelay"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.PicturesBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.CustomPicturesBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.CustomStudioImagesPath"></setting>
     </skinsettings>
     <resolutions>
         <resolution>
