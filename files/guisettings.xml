@@ -86,8 +86,8 @@
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <addonupdates default="true">0</addonupdates>
-        <systemtotaluptime>7839</systemtotaluptime>
         <settinglevel>3</settinglevel>
+        <systemtotaluptime>7839</systemtotaluptime>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -113,15 +113,15 @@
         <subtitlelanguage default="true">original</subtitlelanguage>
         <temperatureunit default="true">regional</temperatureunit>
         <timeformat default="true">regional</timeformat>
-        <timezone default="true">default</timezone>
-        <timezonecountry default="true">default</timezonecountry>
+        <timezone>default</timezone>
+        <timezonecountry>default</timezonecountry>
         <use24hourclock default="true">regional</use24hourclock>
     </locale>
     <lookandfeel>
         <enablerssfeeds>false</enablerssfeeds>
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
-        <skin>skin.confluence.hwymod2015</skin>
+        <skin>skin.confluence.hwy2015</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
@@ -163,7 +163,7 @@
         <replaygaintype default="true">1</replaygaintype>
         <seekdelay default="true">750</seekdelay>
         <seeksteps default="true">-60,-30,-10,10,30,60</seeksteps>
-        <visualisation default="true">visualization.milkdrop</visualisation>
+        <visualisation default="true">visualization.glspectrum</visualisation>
     </musicplayer>
     <mymusic>
         <defaultlibview default="true"></defaultlibview>
@@ -288,10 +288,10 @@
         <useairplaypassword default="true">false</useairplaypassword>
         <webserver default="true">false</webserver>
         <webserverpassword default="true"></webserverpassword>
-        <webserverport default="true">80</webserverport>
+        <webserverport default="true">8080</webserverport>
         <webserverusername default="true">kodi</webserverusername>
         <webskin default="true">webinterface.default</webskin>
-        <zeroconf default="true">false</zeroconf>
+        <zeroconf default="true">true</zeroconf>
     </services>
     <slideshow>
         <displayeffects default="true">true</displayeffects>
@@ -353,8 +353,10 @@
         <useamcodec default="true">true</useamcodec>
         <usedisplayasclock default="true">false</usedisplayasclock>
         <usedxva2 default="true">true</usedxva2>
+        <usemediacodec default="true">true</usemediacodec>
         <useomx default="true">true</useomx>
         <useomxplayer default="true">true</useomxplayer>
+        <usestagefright default="true">true</usestagefright>
         <usevaapi default="true">true</usevaapi>
         <usevaapimpeg2 default="true">true</usevaapimpeg2>
         <usevaapimpeg4 default="true">true</usevaapimpeg4>
@@ -387,657 +389,10 @@
         <height>1057</height>
         <width>1920</width>
     </window>
-    <resolutions>
-        <resolution>
-            <description>1920x1080@ 60.00 - Full Screen</description>
-            <subtitles>1042</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1920x1080@ 30.00i #2 - Full Screen</description>
-            <subtitles>1042</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>640x480@ 75.00 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>640</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>640x480@ 60.00 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>640</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>640x480@ 59.94 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>640</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>720x480@ 75.00 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>720x480@ 60.00 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>720x576@ 75.00 - Full Screen</description>
-            <subtitles>555</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>576</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>720x576@ 60.00 - Full Screen</description>
-            <subtitles>555</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>576</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>800x600@ 75.00 - Full Screen</description>
-            <subtitles>579</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>800</right>
-                <bottom>600</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>800x600@ 60.00 - Full Screen</description>
-            <subtitles>579</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>800</right>
-                <bottom>600</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1024x768@ 75.00 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1024</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1024x768@ 60.00 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1024</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1152x864@ 75.00 - Full Screen</description>
-            <subtitles>833</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1152</right>
-                <bottom>864</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1152x864@ 60.00 - Full Screen</description>
-            <subtitles>833</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1152</right>
-                <bottom>864</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x720@ 59.94 - Full Screen</description>
-            <subtitles>694</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>720</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x720@ 60.00 - Full Screen</description>
-            <subtitles>694</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>720</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x768@ 60.00 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x800@ 60.00 - Full Screen</description>
-            <subtitles>772</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>800</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x960@ 75.00 - Full Screen</description>
-            <subtitles>926</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>960</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x960@ 60.00 - Full Screen</description>
-            <subtitles>926</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>960</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x1024@ 75.00 - Full Screen</description>
-            <subtitles>988</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>1024</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x1024@ 60.00 - Full Screen</description>
-            <subtitles>988</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>1024</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1360x768@ 60.00 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1360</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1366x768@ 60.00 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1366</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1440x900@ 60.00 - Full Screen</description>
-            <subtitles>868</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1440</right>
-                <bottom>900</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1600x900@ 60.00 - Full Screen</description>
-            <subtitles>868</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1600</right>
-                <bottom>900</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1680x1050@ 60.00 - Full Screen</description>
-            <subtitles>1013</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1680</right>
-                <bottom>1050</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1920x1080@ 59.94 - Full Screen</description>
-            <subtitles>1042</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>640x480@ 60.00 #2 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>640</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>640x480@ 59.94 #2 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>640</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>720x480@ 59.94 #2 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>720x480@ 60.00 #2 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>720x480@ 29.97i #2 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>720x480@ 30.00i #2 - Full Screen</description>
-            <subtitles>463</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>480</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>720x576@ 60.00 #2 - Full Screen</description>
-            <subtitles>555</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>720</right>
-                <bottom>576</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>800x600@ 60.00 #2 - Full Screen</description>
-            <subtitles>579</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>800</right>
-                <bottom>600</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1024x768@ 60.00 #2 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1024</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1152x648@ 59.94 #2 - Full Screen</description>
-            <subtitles>625</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1152</right>
-                <bottom>648</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1152x648@ 60.00 #2 - Full Screen</description>
-            <subtitles>625</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1152</right>
-                <bottom>648</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x720@ 59.94 #2 - Full Screen</description>
-            <subtitles>694</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>720</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x720@ 60.00 #2 - Full Screen</description>
-            <subtitles>694</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>720</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x768@ 60.00 #2 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x960@ 29.97i #2 - Full Screen</description>
-            <subtitles>926</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>960</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x960@ 30.00i #2 - Full Screen</description>
-            <subtitles>926</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>960</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x1024@ 29.97i #2 - Full Screen</description>
-            <subtitles>988</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>1024</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1280x1024@ 30.00i #2 - Full Screen</description>
-            <subtitles>988</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1280</right>
-                <bottom>1024</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1360x768@ 60.00 #2 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1360</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1366x768@ 29.97i #2 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1366</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1366x768@ 30.00i #2 - Full Screen</description>
-            <subtitles>741</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1366</right>
-                <bottom>768</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1600x900@ 29.97i #2 - Full Screen</description>
-            <subtitles>868</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1600</right>
-                <bottom>900</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1600x900@ 30.00i #2 - Full Screen</description>
-            <subtitles>868</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1600</right>
-                <bottom>900</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1680x1050@ 29.97i #2 - Full Screen</description>
-            <subtitles>1013</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1680</right>
-                <bottom>1050</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1680x1050@ 30.00i #2 - Full Screen</description>
-            <subtitles>1013</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1680</right>
-                <bottom>1050</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1776x1000@ 29.97i #2 - Full Screen</description>
-            <subtitles>965</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1776</right>
-                <bottom>1000</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1776x1000@ 30.00i #2 - Full Screen</description>
-            <subtitles>965</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1776</right>
-                <bottom>1000</bottom>
-            </overscan>
-        </resolution>
-        <resolution>
-            <description>1920x1080@ 29.97i #2 - Full Screen</description>
-            <subtitles>1042</subtitles>
-            <pixelratio>1.000000</pixelratio>
-            <overscan>
-                <left>0</left>
-                <top>0</top>
-                <right>1920</right>
-                <bottom>1080</bottom>
-            </overscan>
-        </resolution>
-    </resolutions>
-    <defaultvideosettings>
-        <deinterlacemode>1</deinterlacemode>
-        <interlacemethod>1</interlacemethod>
-        <scalingmethod>1</scalingmethod>
-        <noisereduction>0.000000</noisereduction>
-        <postprocess>false</postprocess>
-        <sharpness>0.000000</sharpness>
-        <viewmode>4</viewmode>
-        <zoomamount>1.000000</zoomamount>
-        <pixelratio>1.333333</pixelratio>
-        <verticalshift>0.000000</verticalshift>
-        <volumeamplification>0.000000</volumeamplification>
-        <outputtoallspeakers>false</outputtoallspeakers>
-        <showsubtitles>false</showsubtitles>
-        <brightness>50.000000</brightness>
-        <contrast>50.000000</contrast>
-        <gamma>20.000000</gamma>
-        <audiodelay>0.000000</audiodelay>
-        <subtitledelay>0.000000</subtitledelay>
-        <nonlinstretch>false</nonlinstretch>
-        <stereomode>0</stereomode>
-    </defaultvideosettings>
+    <audio>
+        <mute>false</mute>
+        <fvolumelevel>1.000000</fvolumelevel>
+    </audio>
     <skinsettings>
         <setting type="bool" name="skin.confluence.Use_Startup_Playlist">false</setting>
         <setting type="bool" name="skin.confluence.UseCustomBackground">false</setting>
@@ -1303,6 +658,37 @@
         <setting type="bool" name="skin.confluence.hwy2015.WindowedTrailer">false</setting>
         <setting type="bool" name="skin.confluence.hwy2015.HideVisualizationFanart">false</setting>
         <setting type="bool" name="skin.xonfluence.AnimeWindowXMLDialogClose">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.UseCustomBackground">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HideBackGroundFanart">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HomepageHideRecentlyAddedVideo">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HomepageHideRecentlyAddedAlbums">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.homepageWeatherinfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.homepageMusicinfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.homepageVideoinfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HomeMenuNoMovieButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HomeMenuNoTVShowButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HomeMenuNoPicturesButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HomeMenuNoMusicButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.HomeMenuNoProgramsButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.AutoScroll">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.FirstTimeRun">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.SmartShortcuts.emby">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.SmartShortcuts.playlists">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.SmartShortcuts.favorites">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.SmartShortcuts.plex">false</setting>
+        <setting type="bool" name="skin.confluence.hwymod2015.SmartShortcuts.netflix">false</setting>
+        <setting type="bool" name="skin.confluence.bossanova808.isengard.HideSeekBarOSD">false</setting>
+        <setting type="bool" name="skin.confluence.bossanova808.isengard.UseCustomBackground">false</setting>
+        <setting type="bool" name="skin.confluence.bossanova808.isengard.HideBackGroundFanart">false</setting>
+        <setting type="bool" name="skin.confluence.bossanova808.isengard.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.confluence.bossanova808.isengard.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.confluence.SmartShortcuts.plex">false</setting>
+        <setting type="bool" name="skin.confluence.EnableNextAiredNotifications">false</setting>
         <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
         <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
@@ -2066,7 +1452,7 @@
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton7">plugin.video.1channel</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton8">plugin.video.movie4k</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton9">plugin.video.xmovies8</setting>
-		<setting type="string" name="skin.confluence.hwy2015.HomeVideosButton10">plugin.video.ufo</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton10">plugin.video.ufo</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton11"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton12"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton13"></setting>
@@ -2114,7 +1500,687 @@
         <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton10"></setting>
         <setting type="string" name="skin.confluence.hwy2015.Startup_Playlist_Path"></setting>
         <setting type="string" name="skin.confluence.hwy2015.LyricScript_Path"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.CustomBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton1"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton2"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton3"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton4"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton5"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton1"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton2"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton3"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton4"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton5"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton1"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton2"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton3"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton4"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton5"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton1"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton2"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton3"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton4"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton5"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.PicturesBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.CustomPicturesBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.RandomFanartDelay"></setting>
+        <setting type="string" name="skin.confluence.bossanova808.isengard.CustomBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.bossanova808.isengard.SkinHelper.RandomFanartDelay"></setting>
+        <setting type="string" name="skin.confluence.bossanova808.isengard.SkinHelper.CustomStudioImagesPath"></setting>
+        <setting type="string" name="skin.confluence.SkinHelper.RandomFanartDelay"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.RandomFanartDelay"></setting>
     </skinsettings>
+    <resolutions>
+        <resolution>
+            <description>1920x1080@ 60.00 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080@ 30.00i #2 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 75.00 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 60.00 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 59.94 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 75.00 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 60.00 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x576@ 75.00 - Full Screen</description>
+            <subtitles>555</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x576@ 60.00 - Full Screen</description>
+            <subtitles>555</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>800x600@ 75.00 - Full Screen</description>
+            <subtitles>579</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>800x600@ 60.00 - Full Screen</description>
+            <subtitles>579</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1024x768@ 75.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1024x768@ 60.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1152x864@ 75.00 - Full Screen</description>
+            <subtitles>833</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>864</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1152x864@ 60.00 - Full Screen</description>
+            <subtitles>833</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>864</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720@ 59.94 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720@ 60.00 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x768@ 60.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x800@ 60.00 - Full Screen</description>
+            <subtitles>772</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x960@ 75.00 - Full Screen</description>
+            <subtitles>926</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x960@ 60.00 - Full Screen</description>
+            <subtitles>926</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x1024@ 75.00 - Full Screen</description>
+            <subtitles>988</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x1024@ 60.00 - Full Screen</description>
+            <subtitles>988</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1360x768@ 60.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1360</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1366x768@ 60.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1366</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1440x900@ 60.00 - Full Screen</description>
+            <subtitles>868</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1600x900@ 60.00 - Full Screen</description>
+            <subtitles>868</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1680x1050@ 60.00 - Full Screen</description>
+            <subtitles>1013</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080@ 59.94 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 60.00 #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 59.94 #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 59.94 #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 60.00 #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 29.97i #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 30.00i #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x576@ 60.00 #2 - Full Screen</description>
+            <subtitles>555</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>800x600@ 60.00 #2 - Full Screen</description>
+            <subtitles>579</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1024x768@ 60.00 #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1152x648@ 59.94 #2 - Full Screen</description>
+            <subtitles>625</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>648</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1152x648@ 60.00 #2 - Full Screen</description>
+            <subtitles>625</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>648</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720@ 59.94 #2 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720@ 60.00 #2 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x768@ 60.00 #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x960@ 29.97i #2 - Full Screen</description>
+            <subtitles>926</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x960@ 30.00i #2 - Full Screen</description>
+            <subtitles>926</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x1024@ 29.97i #2 - Full Screen</description>
+            <subtitles>988</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x1024@ 30.00i #2 - Full Screen</description>
+            <subtitles>988</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1360x768@ 60.00 #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1360</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1366x768@ 29.97i #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1366</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1366x768@ 30.00i #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1366</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1600x900@ 29.97i #2 - Full Screen</description>
+            <subtitles>868</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1600x900@ 30.00i #2 - Full Screen</description>
+            <subtitles>868</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1680x1050@ 29.97i #2 - Full Screen</description>
+            <subtitles>1013</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1680x1050@ 30.00i #2 - Full Screen</description>
+            <subtitles>1013</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1776x1000@ 29.97i #2 - Full Screen</description>
+            <subtitles>965</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1776</right>
+                <bottom>1000</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1776x1000@ 30.00i #2 - Full Screen</description>
+            <subtitles>965</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1776</right>
+                <bottom>1000</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080@ 29.97i #2 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+    </resolutions>
+    <defaultvideosettings>
+        <deinterlacemode>1</deinterlacemode>
+        <interlacemethod>1</interlacemethod>
+        <scalingmethod>1</scalingmethod>
+        <noisereduction>0.000000</noisereduction>
+        <postprocess>false</postprocess>
+        <sharpness>0.000000</sharpness>
+        <viewmode>4</viewmode>
+        <zoomamount>1.000000</zoomamount>
+        <pixelratio>1.333333</pixelratio>
+        <verticalshift>0.000000</verticalshift>
+        <volumeamplification>0.000000</volumeamplification>
+        <outputtoallspeakers>false</outputtoallspeakers>
+        <showsubtitles>false</showsubtitles>
+        <brightness>50.000000</brightness>
+        <contrast>50.000000</contrast>
+        <gamma>20.000000</gamma>
+        <audiodelay>0.000000</audiodelay>
+        <subtitledelay>0.000000</subtitledelay>
+        <nonlinstretch>false</nonlinstretch>
+        <stereomode>0</stereomode>
+    </defaultvideosettings>
     <viewstates>
         <musicfiles>
             <viewmode>720896</viewmode>
@@ -2213,8 +2279,4 @@
             <sortattributes>0</sortattributes>
         </videonavyears>
     </viewstates>
-    <audio>
-        <mute>false</mute>
-        <fvolumelevel>0.557778</fvolumelevel>
-    </audio>
 </settings>
