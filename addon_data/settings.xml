@@ -1,0 +1,15 @@
+<settings>
+    <setting id="addons.ini.file" value="/storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/userdata/addon_data/script.tvguidetecbox/ufo-addons.ini" />
+    <setting id="addons.ini.type" value="1" />
+    <setting id="alternative.playback" value="false" />
+    <setting id="autostart" value="false" />
+    <setting id="enable.osd" value="true" />
+    <setting id="logos.enabled" value="true" />
+    <setting id="logos.folder" value="" />
+    <setting id="logos.source" value="0" />
+    <setting id="notifications.enabled" value="true" />
+    <setting id="skin" value="iVue Red" />
+    <setting id="xmltv.interval" value="1" />
+    <setting id="xmltv.type" value="4" />
+    <setting id="xmltv.type_select" value="TECBOX (stalkeriptv)" />
+</settings>
