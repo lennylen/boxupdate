@@ -517,13 +517,13 @@
         <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathClick"></setting>
         <setting type="string" name="skin.confluence.hwy2015.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton1">script.tvguidetecbox</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton2">plugin.video.dextertv</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton3">plugin.video.channelpear</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton2"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton3"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton4">plugin.video.MoneySports</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton5">plugin.video.SportsDevil</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton6">plugin.video.genesis</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton7">plugin.video.1channel</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton8">plugin.video.movie4k</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton6"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton7"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton8"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton9">plugin.video.xmovies8</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton10">plugin.video.ufo</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton11"></setting>
@@ -541,11 +541,11 @@
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton23"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton24"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton25"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton1">plugin.audio.radioreference</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton2">plugin.audio.radio_de</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton3">plugin.audio.soundcloud</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton4">plugin.audio.di.fm</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton5">plugin.video.itunes_podcasts</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton1"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton2"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton3"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton4"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton5"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton6"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton7"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton8"></setting>
