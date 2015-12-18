@@ -14,4 +14,10 @@
 <addon id="plugin.video.ProjectCypher" version="2.0.1" data_version="0.0.1"></addon>
 
 <addon id="plugin.video.nbanhlstreams" version="0.6" data_version="0.0.1"></addon>
+
+<addon id="plugin.video.salts" version="0.1" data_version="1.0.90"></addon>
+
+<addon id="plugin.program.ump" version="0.0.37" data_version="0.0.1"></addon>
+
+
 </addons>
