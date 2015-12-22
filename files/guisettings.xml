@@ -522,11 +522,11 @@
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton4">plugin.video.nbanhlstreams</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton5">plugin.video.SportsDevil</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton6">plugin.video.ProjectCypher</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton7">plugin.video.xmovies8</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton8">plugin.video.salts</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton9">plugin.video.ump</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton10">plugin.video.ufo</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton11"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton7">plugin.video.genesis</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton8">plugin.video.xmovies8</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton9">plugin.video.salts</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton10">plugin.video.ump</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton11">plugin.video.ufo</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton12"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton13"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton14"></setting>
