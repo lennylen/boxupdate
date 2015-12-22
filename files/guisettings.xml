@@ -517,7 +517,7 @@
         <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathClick"></setting>
         <setting type="string" name="skin.confluence.hwy2015.CustomBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton1">script.tvguidetecbox</setting>-
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton2">plugin.video.ccloud</setting>-
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton2">plugin.video.ccloudtv</setting>-
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton3">plugin.video.CanTVLive</setting>-
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton4">plugin.video.nbanhlstreams</setting>-
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton5">plugin.video.SportsDevil</setting>-
