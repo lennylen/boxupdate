@@ -369,7 +369,7 @@
     </videoplayer>
     <videoscreen>
         <blankdisplays default="true">false</blankdisplays>
-        <fakefullscreen default="true">true</fakefullscreen>
+        <fakefullscreen default="true">false</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <monitor default="true">Default</monitor>
         <preferedstereoscopicmode default="true">100</preferedstereoscopicmode>
@@ -384,7 +384,7 @@
         <currentlocation default="true">1</currentlocation>
     </weather>
     <window>
-        <height>1057</height>
+        <height>874</height>
         <width>1920</width>
     </window>
     <resolutions>
@@ -1961,7 +1961,7 @@
         <setting type="string" name="skin.xonfluence.InitialMenuItem"></setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.PicturesBackgroundPath"></setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.CustomPicturesBackgroundPath"></setting>
-        <setting type="string" name="skin.xonfluence.LastVideoPlayed">PlayMedia(&quot;special://skin/extras/Intro/KODI-Intro-Video.mp4&quot;)</setting>
+        <setting type="string" name="skin.xonfluence.LastVideoPlayed">PlayMedia(&quot;&quot;)</setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.CustomStudioImagesPath"></setting>
         <setting type="string" name="skin.xonfluence.MPAACertificate"></setting>
         <setting type="string" name="skin.xonfluence.MusicOSDInfo"></setting>
@@ -2019,7 +2019,7 @@
         <setting type="string" name="skin.xonfluence.SkinHelper.ForcedViews.episodes"></setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.AutoCloseVideoOSD"></setting>
     </skinsettings>
-      <viewstates>
+    <viewstates>
         <musicfiles>
             <viewmode>720896</viewmode>
             <sortmethod>1</sortmethod>
