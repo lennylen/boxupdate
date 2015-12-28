@@ -15,7 +15,7 @@
     <audiooutput>
         <ac3passthrough default="true">true</ac3passthrough>
         <ac3transcode default="true">false</ac3transcode>
-        <audiodevice default="true">AUDIOTRACK:AudioTrack</audiodevice>
+        <audiodevice default="true">DIRECTSOUND:default</audiodevice>
         <channels default="true">1</channels>
         <config default="true">2</config>
         <dtshdpassthrough default="true">false</dtshdpassthrough>
@@ -24,7 +24,7 @@
         <guisoundmode default="true">1</guisoundmode>
         <maintainoriginalvolume default="true">true</maintainoriginalvolume>
         <passthrough default="true">false</passthrough>
-        <passthroughdevice default="true">AUDIOTRACK:AudioTrack</passthroughdevice>
+        <passthroughdevice default="true">DIRECTSOUND:default</passthroughdevice>
         <processquality default="true">30</processquality>
         <samplerate default="true">48000</samplerate>
         <stereoupmix default="true">false</stereoupmix>
@@ -86,8 +86,8 @@
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <addonupdates default="true">0</addonupdates>
-        <settinglevel>3</settinglevel>
         <systemtotaluptime>11749</systemtotaluptime>
+        <settinglevel>3</settinglevel>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -113,8 +113,8 @@
         <subtitlelanguage default="true">original</subtitlelanguage>
         <temperatureunit default="true">regional</temperatureunit>
         <timeformat default="true">regional</timeformat>
-        <timezone>default</timezone>
-        <timezonecountry>default</timezonecountry>
+        <timezone default="true">default</timezone>
+        <timezonecountry default="true">default</timezonecountry>
         <use24hourclock default="true">regional</use24hourclock>
     </locale>
     <lookandfeel>
@@ -122,10 +122,10 @@
         <font default="true">Default</font>
         <rssedit default="true"></rssedit>
         <skin>skin.xonfluence</skin>
-        <skincolors default="true">SKINDEFAULT</skincolors>
+        <skincolors>gray</skincolors>
         <skintheme default="true">SKINDEFAULT</skintheme>
         <skinzoom default="true">0</skinzoom>
-        <soundskin>SKINDEFAULT</soundskin>
+        <soundskin default="true">resource.uisounds.confluence</soundskin>
         <startupwindow default="true">10000</startupwindow>
     </lookandfeel>
     <masterlock>
@@ -163,7 +163,7 @@
         <replaygaintype default="true">1</replaygaintype>
         <seekdelay default="true">750</seekdelay>
         <seeksteps default="true">-60,-30,-10,10,30,60</seeksteps>
-        <visualisation default="true">visualization.glspectrum</visualisation>
+        <visualisation default="true">visualization.milkdrop</visualisation>
     </musicplayer>
     <mymusic>
         <defaultlibview default="true"></defaultlibview>
@@ -288,10 +288,10 @@
         <useairplaypassword default="true">false</useairplaypassword>
         <webserver>true</webserver>
         <webserverpassword default="true"></webserverpassword>
-        <webserverport default="true">8080</webserverport>
+        <webserverport>8080</webserverport>
         <webserverusername default="true">kodi</webserverusername>
         <webskin default="true">webinterface.default</webskin>
-        <zeroconf default="true">true</zeroconf>
+        <zeroconf>true</zeroconf>
     </services>
     <slideshow>
         <displayeffects default="true">true</displayeffects>
@@ -353,10 +353,8 @@
         <useamcodec default="true">true</useamcodec>
         <usedisplayasclock default="true">false</usedisplayasclock>
         <usedxva2 default="true">true</usedxva2>
-        <usemediacodec default="true">true</usemediacodec>
         <useomx default="true">true</useomx>
         <useomxplayer default="true">true</useomxplayer>
-        <usestagefright default="true">true</usestagefright>
         <usevaapi default="true">true</usevaapi>
         <usevaapimpeg2 default="true">true</usevaapimpeg2>
         <usevaapimpeg4 default="true">true</usevaapimpeg4>
@@ -371,7 +369,7 @@
     </videoplayer>
     <videoscreen>
         <blankdisplays default="true">false</blankdisplays>
-        <fakefullscreen default="true">true</fakefullscreen>
+        <fakefullscreen default="true">false</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <monitor default="true">Default</monitor>
         <preferedstereoscopicmode default="true">100</preferedstereoscopicmode>
@@ -393,6 +391,29 @@
         <mute>false</mute>
         <fvolumelevel>1.000000</fvolumelevel>
     </audio>
+    <resolutions />
+    <defaultvideosettings>
+        <deinterlacemode>1</deinterlacemode>
+        <interlacemethod>1</interlacemethod>
+        <scalingmethod>1</scalingmethod>
+        <noisereduction>0.000000</noisereduction>
+        <postprocess>false</postprocess>
+        <sharpness>0.000000</sharpness>
+        <viewmode>0</viewmode>
+        <zoomamount>1.000000</zoomamount>
+        <pixelratio>1.000000</pixelratio>
+        <verticalshift>0.000000</verticalshift>
+        <volumeamplification>0.000000</volumeamplification>
+        <outputtoallspeakers>false</outputtoallspeakers>
+        <showsubtitles>true</showsubtitles>
+        <brightness>50.000000</brightness>
+        <contrast>50.000000</contrast>
+        <gamma>20.000000</gamma>
+        <audiodelay>0.000000</audiodelay>
+        <subtitledelay>0.000000</subtitledelay>
+        <nonlinstretch>false</nonlinstretch>
+        <stereomode>0</stereomode>
+    </defaultvideosettings>
     <skinsettings>
         <setting type="bool" name="skin.confluence.Use_Startup_Playlist">false</setting>
         <setting type="bool" name="skin.confluence.UseCustomBackground">false</setting>
@@ -562,168 +583,33 @@
         <setting type="bool" name="skin.xonfluence.HideNewMediaStat">false</setting>
         <setting type="bool" name="skin.xonfluence.SkinHelper.EnableExtraFanart">false</setting>
         <setting type="bool" name="skin.xonfluence.AnimeWindowXMLDialogClose">false</setting>
-        <setting type="bool" name="skin.xonfluence.Use_Startup_Playlist">false</setting>
-        <setting type="bool" name="skin.xonfluence.UseCustomBackground">false</setting>
-        <setting type="bool" name="skin.xonfluence.ShowBackgroundVideo">false</setting>
-        <setting type="bool" name="skin.xonfluence.ShowBackgroundVis">false</setting>
-        <setting type="bool" name="skin.xonfluence.HomepageHideRecentlyAddedVideo">false</setting>
-        <setting type="bool" name="skin.xonfluence.HomepageHideRecentlyAddedAlbums">false</setting>
-        <setting type="bool" name="skin.xonfluence.homepageWeatherinfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.homepageMusicinfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.homepageVideoinfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.HomeMenuNoMovieButton">false</setting>
-        <setting type="bool" name="skin.xonfluence.HomeMenuNoTVShowButton">false</setting>
-        <setting type="bool" name="skin.xonfluence.HomeMenuNoWeatherButton">false</setting>
-        <setting type="bool" name="skin.xonfluence.HomeMenuNoPicturesButton">false</setting>
-        <setting type="bool" name="skin.xonfluence.HomeMenuNoVideosButton">false</setting>
-        <setting type="bool" name="skin.xonfluence.HomeMenuNoMusicButton">false</setting>
-        <setting type="bool" name="skin.xonfluence.HomeMenuNoProgramsButton">false</setting>
-        <setting type="bool" name="skin.confluence.SmartShortcuts.emby">false</setting>
-        <setting type="bool" name="skin.confluence.SmartShortcuts.playlists">false</setting>
-        <setting type="bool" name="skin.confluence.SmartShortcuts.favorites">false</setting>
-        <setting type="bool" name="skin.confluence.SmartShortcuts.plex">false</setting>
-        <setting type="bool" name="skin.confluence.SmartShortcuts.netflix">false</setting>
-        <setting type="bool" name="skin.confluence.EnableNextAiredNotifications">false</setting>
-		<setting type="bool" name="skin.xonfluence.AutoPartySaver">false</setting>
-        <setting type="bool" name="skin.xonfluence.HidePopUpSeekBar">false</setting>
-        <setting type="bool" name="skin.xonfluence.NotificationsTopLeft">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideBusyAnimation">false</setting>
-        <setting type="bool" name="skin.xonfluence.AllScreenTopLeftWidget">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideTopLeftWindows">false</setting>
-        <setting type="bool" name="skin.xonfluence.NoAnimateVizFanart">false</setting>
-        <setting type="bool" name="skin.xonfluence.SingleGlobalBackground">false</setting>
-        <setting type="bool" name="skin.xonfluence.HolidayEffects">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideHomeNowPlaying">false</setting>
-        <setting type="bool" name="skin.xonfluence.VizOnlyOnHome">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideBackgroundCDWall">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableFanartScript">true</setting>
-        <setting type="bool" name="skin.xonfluence.HideBackGroundFanart">false</setting>
-        <setting type="bool" name="skin.xonfluence.EpisodeBackground">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableAdditionalArtWork">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideListItemArtWork">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableClearArt">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableDiscArt">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableLogoArt">false</setting>
-        <setting type="bool" name="skin.xonfluence.NoDiffuseVizFanart">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableSlideShowArt">false</setting>
-        <setting type="bool" name="skin.xonfluence.NoAnimateFanart">false</setting>
-        <setting type="bool" name="skin.xonfluence.HidePVRNowPlaying">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideHomeFloor">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideEpisodeThumb">false</setting>
-        <setting type="bool" name="skin.xonfluence.AutoScroll">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableFloorBtns">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideTrailerBtn">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideNowPlayingInfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.HidePageCountInfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableFloorReturnButtons">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableVolumeButtons">false</setting>
-        <setting type="bool" name="skin.xonfluence.KioskMode">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideSystemTime">false</setting>
-        <setting type="bool" name="skin.xonfluence.AutoFocusUnwatchedEpisode">false</setting>
-        <setting type="bool" name="skin.xonfluence.InitialSetUpRun">true</setting>
-        <setting type="bool" name="skin.xonfluence.Updates_V312">true</setting>
-        <setting type="bool" name="skin.xonfluence.Updates_V314">true</setting>
-        <setting type="bool" name="skin.xonfluence.EnableHomeStats">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableRainDropEffect">true</setting>
-        <setting type="bool" name="skin.xonfluence.WrapAroundHomeMenu">false</setting>
-        <setting type="bool" name="skin.xonfluence.LowerMainMenuBar">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideTVRecordingInfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideYearTitle">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableLargeWidgets">true</setting>
-        <setting type="bool" name="skin.xonfluence.HideSuggestedMedia">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableScriptPlayList">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableTVNextAired">false</setting>
-        <setting type="bool" name="skin.xonfluence.UPnP_Mode">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableGlobalSearch">true</setting>
-        <setting type="bool" name="skin.xonfluence.AutoVisableSubMenu">true</setting>
-        <setting type="bool" name="skin.xonfluence.HideNextSongsInfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideHomePowerBtn">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideFavorites">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnablePingWOL">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideStartUpBackground">false</setting>
-        <setting type="bool" name="skin.xonfluence.UseStartUpPlaylistPath">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideKodiIntro">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableTVTunes">true</setting>
-        <setting type="bool" name="skin.xonfluence.DisableWatchItLater">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableFanartScript">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideSeekBarOSD">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideArtWorkOSD">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideInfoStartOSD">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnablePauseInfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.StopAutoScroll">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnablePlotInfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.SmartShortcuts.emby">false</setting>
-        <setting type="bool" name="skin.xonfluence.SmartShortcuts.playlists">false</setting>
-        <setting type="bool" name="skin.xonfluence.SmartShortcuts.favorites">false</setting>
-        <setting type="bool" name="skin.xonfluence.SmartShortcuts.plex">false</setting>
-        <setting type="bool" name="skin.xonfluence.SmartShortcuts.netflix">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableNextAiredNotifications">false</setting>
-        <setting type="bool" name="skin.xonfluence.FixedEndingMenu">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableDVDCases">false</setting>
-        <setting type="bool" name="skin.xonfluence.UseDiscTypeCase">false</setting>
-        <setting type="bool" name="skin.xonfluence.SmallVolumeJump">false</setting>
-        <setting type="bool" name="skin.xonfluence.KeyboardGraphicalTextures">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableAutoComplete">true</setting>
-        <setting type="bool" name="skin.xonfluence.WrapMediaViews">false</setting>
-        <setting type="bool" name="skin.xonfluence.MediaShortDescription">false</setting>
-        <setting type="bool" name="skin.xonfluence.Show_SlideShow_Paused">false</setting>
-        <setting type="bool" name="skin.xonfluence.WindowedTrailer">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideFilenameFlagging">false</setting>
-        <setting type="bool" name="skin.xonfluence.MinimalPictureInfo">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableCDArtWork">false</setting>
-        <setting type="bool" name="skin.xonfluence.Show_Suspend">false</setting>
-        <setting type="bool" name="skin.xonfluence.AutoHidePowerBtn">false</setting>
-        <setting type="bool" name="skin.xonfluence.Show_Hibernate">false</setting>
-        <setting type="bool" name="skin.xonfluence.Show_Logoff">false</setting>
-        <setting type="bool" name="skin.xonfluence.Show_Mastermode">false</setting>
-        <setting type="bool" name="skin.xonfluence.Show_Timer">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableAutoUpdateArt">false</setting>
-        <setting type="bool" name="skin.xonfluence.Enable_CustomShutDown">false</setting>
-        <setting type="bool" name="skin.xonfluence.Enable_CustomTimer">false</setting>
-        <setting type="bool" name="skin.xonfluence.Enable_CustomHibernate">false</setting>
-        <setting type="bool" name="skin.xonfluence.Enable_CustomSuspend">false</setting>
-        <setting type="bool" name="skin.xonfluence.Enable_CustomHSuspend">false</setting>
-        <setting type="bool" name="skin.xonfluence.RestartNotReboot">false</setting>
-        <setting type="bool" name="skin.xonfluence.MinimizeOnExit">false</setting>
-        <setting type="bool" name="skin.xonfluence.SkinHelper.EnablePVRThumbs">false</setting>
-        <setting type="bool" name="skin.xonfluence.ShowWeatherFanart">false</setting>
-        <setting type="bool" name="skin.xonfluence.WeatherScript_Enable">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableStatusBanner">false</setting>
-        <setting type="bool" name="skin.xonfluence.View515Hidelogo">false</setting>
-        <setting type="bool" name="skin.xonfluence.Disable504FanArt">false</setting>
-        <setting type="bool" name="skin.xonfluence.Enable515WideBanners">false</setting>
-        <setting type="bool" name="skin.xonfluence.Videos_Librarymode">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideWatchedMediaStat">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideNewMediaStat">false</setting>
-        <setting type="bool" name="skin.xonfluence.SkinHelper.EnableExtraFanart">false</setting>
-        <setting type="bool" name="skin.xonfluence.AnimeWindowXMLDialogClose">false</setting>
-        <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton3"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton4"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton5"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton1"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton2"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton3"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton4"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton5"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton1"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton2"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton3"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton4"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton5"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton1"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton2"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton3"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton4"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton5"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.CustomPointerSize"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathNF"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathFO"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathDrag"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathClick"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.CustomBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.CustomBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton1">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton2">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton3">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton4">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton5">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton1">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton2">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton3">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton4">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton5">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton1">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton2">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton3">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton4">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton5">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton1">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton2">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton3">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton4">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerSize">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathNF">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathFO">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathDrag">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathClick">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomBackgroundPath">None</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton1">script.tvguidetecbox</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton2">plugin.video.ccloudtv</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton3">plugin.video.CanTVLive</setting>
@@ -735,83 +621,83 @@
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton9">plugin.video.md123movies</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton10">plugin.video.xmovies8</setting>
         <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton11">plugin.video.salts</setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton12"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton13"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton14"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton15"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton16"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton17"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton18"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton19"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton20"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton21"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton22"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton23"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton24"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton25"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton1"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton2"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton3"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton4"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton5"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton6"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton7"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton8"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton9"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton10"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton1"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton2"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton3"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton4"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton5"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton6"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton7"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton8"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton9"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton10"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton1"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton2"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton3"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton4"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton5"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton6"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton7"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton8"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton9"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton10"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.Startup_Playlist_Path"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.LyricScript_Path"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.RandomFanartDelay"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.PicturesBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.CustomPicturesBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.CustomStudioImagesPath"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton12">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton13">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton14">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton15">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton16">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton17">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton18">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton19">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton20">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton21">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton22">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton23">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton24">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton25">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton6">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton7">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton8">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton9">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton10">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton6">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton7">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton8">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton9">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton10">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton6">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton7">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton8">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton9">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton10">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.Startup_Playlist_Path">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.LyricScript_Path">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.RandomFanartDelay">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.PicturesBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.CustomPicturesBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.CustomStudioImagesPath">None</setting>
         <setting type="string" name="skin.confluence.SkinHelper.PicturesBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.Home_Custom_Back_TV_Folder"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.CustomBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton1"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton2"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton3"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton4"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton5"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton1"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton2"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton3"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton4"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton5"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton1"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton2"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton3"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton4"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton5"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton1"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton2"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton3"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton4"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton5"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.PicturesBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.CustomPicturesBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.RandomFanartDelay"></setting>
-        <setting type="string" name="skin.confluence.SkinHelper.RandomFanartDelay"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_TV_Folder">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.CustomBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.PicturesBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.CustomPicturesBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.RandomFanartDelay">None</setting>
+        <setting type="string" name="skin.confluence.SkinHelper.RandomFanartDelay">None</setting>
         <setting type="string" name="skin.confluence.SkinHelper.CustomPicturesBackgroundPath"></setting>
         <setting type="string" name="skin.confluence.SkinHelper.CustomStudioImagesPath"></setting>
         <setting type="string" name="skin.confluence.hwy2015.SkinHelper.ForcedViews.programs"></setting>
@@ -843,8 +729,8 @@
         <setting type="string" name="skin.xonfluence.SkinHelper.ForcedViews.programs"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.1.Label">Weather</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.1.Path">ActivateWindow(Weather)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Sub"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Addon"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Sub">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Addon">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.1.Widget">Weather</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.1.Type">Weather</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.1.Display">Default</setting>
@@ -852,21 +738,21 @@
         <setting type="string" name="skin.xonfluence.HomeItem.2.Path">RunAddon()</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.2.Sub">LiveTV</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.2.Addon">AddonSetOne</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.2.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.2.Widget">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.2.Type">AddOns</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.2.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.3.Label">Movies</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.3.Path">ActivateWindow(Videos,,return)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.3.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.3.Sub">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.3.Addon">AddonSetTwo</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.3.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.3.Widget">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.3.Type">Streaming</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.3.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.4.Label">TV Shows</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.4.Path">ActivateWindow(Videos,,return)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.4.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.4.Sub">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.4.Addon">AddonSetThree</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.4.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.4.Widget">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.4.Type">Streaming</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.4.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.5.Label">Music</setting>
@@ -893,15 +779,15 @@
         <setting type="string" name="skin.xonfluence.HomeItem.8.Label">Video Add-ons</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Path">ActivateWindow(Videos,Addons,return)</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Sub">Videos</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Addon"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Addon">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Widget">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Type">Videos</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Label">Programs</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Path">ActivateWindow(Programs,Addons,return)</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Sub">Programs</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Addon">Programs</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.9.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.9.Widget">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Type">Programs</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.10.Label"></setting>
@@ -921,8 +807,8 @@
         <setting type="string" name="skin.xonfluence.HomeItem.12.Label">System</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.12.Path">ActivateWindow(Settings)</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.12.Sub">Settings</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Addon"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Addon">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Widget">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.12.Type">Settings</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.12.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.FanArtCycleRate">20</setting>
@@ -1211,7 +1097,7 @@
         <setting type="string" name="skin.xonfluence.AddonSetTwo.3.Label">Genesis</setting>
         <setting type="string" name="skin.xonfluence.AddonSetTwo.3.Icon">special://home/addons/plugin.video.genesis\icon.png</setting>
         <setting type="string" name="skin.xonfluence.AddonSetTwo.3.Path">RunAddon(plugin.video.genesis)</setting>
-        <setting type="string" name="skin.xonfluence.AddonSetTwo.4.Label">MorePower</setting>
+        <setting type="string" name="skin.xonfluence.AddonSetTwo.4.Label">MorePower </setting>
         <setting type="string" name="skin.xonfluence.AddonSetTwo.4.Icon">special://home/addons/plugin.video.morepower\icon.png</setting>
         <setting type="string" name="skin.xonfluence.AddonSetTwo.4.Path">RunAddon(plugin.video.morepower)</setting>
         <setting type="string" name="skin.xonfluence.AddonSetTwo.5.Label">Stream All The Sources</setting>
@@ -1496,52 +1382,7 @@
         <setting type="string" name="skin.xonfluence.SkinHelper.ForcedViews.tvshows"></setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.ForcedViews.episodes"></setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.AutoCloseVideoOSD"></setting>
-        <setting type="string" name="skin.xonfluence.CustomBackgroundPath"></setting>
-        <setting type="string" name="skin.xonfluence.HomeVideosButton1"></setting>
-        <setting type="string" name="skin.xonfluence.HomeVideosButton2"></setting>
-        <setting type="string" name="skin.xonfluence.HomeVideosButton3"></setting>
-        <setting type="string" name="skin.xonfluence.HomeVideosButton4"></setting>
-        <setting type="string" name="skin.xonfluence.HomeVideosButton5"></setting>
-        <setting type="string" name="skin.xonfluence.HomeMusicButton1"></setting>
-        <setting type="string" name="skin.xonfluence.HomeMusicButton2"></setting>
-        <setting type="string" name="skin.xonfluence.HomeMusicButton3"></setting>
-        <setting type="string" name="skin.xonfluence.HomeMusicButton4"></setting>
-        <setting type="string" name="skin.xonfluence.HomeMusicButton5"></setting>
-        <setting type="string" name="skin.xonfluence.HomePictureButton1"></setting>
-        <setting type="string" name="skin.xonfluence.HomePictureButton2"></setting>
-        <setting type="string" name="skin.xonfluence.HomePictureButton3"></setting>
-        <setting type="string" name="skin.xonfluence.HomePictureButton4"></setting>
-        <setting type="string" name="skin.xonfluence.HomePictureButton5"></setting>
-        <setting type="string" name="skin.xonfluence.HomeProgramButton1"></setting>
-        <setting type="string" name="skin.xonfluence.HomeProgramButton2"></setting>
-        <setting type="string" name="skin.xonfluence.HomeProgramButton3"></setting>
-        <setting type="string" name="skin.xonfluence.HomeProgramButton4"></setting>
-        <setting type="string" name="skin.xonfluence.HomeProgramButton5"></setting>
-		
     </skinsettings>
-    <resolutions />
-    <defaultvideosettings>
-        <deinterlacemode>1</deinterlacemode>
-        <interlacemethod>1</interlacemethod>
-        <scalingmethod>1</scalingmethod>
-        <noisereduction>0.000000</noisereduction>
-        <postprocess>false</postprocess>
-        <sharpness>0.000000</sharpness>
-        <viewmode>0</viewmode>
-        <zoomamount>1.000000</zoomamount>
-        <pixelratio>1.000000</pixelratio>
-        <verticalshift>0.000000</verticalshift>
-        <volumeamplification>0.000000</volumeamplification>
-        <outputtoallspeakers>false</outputtoallspeakers>
-        <showsubtitles>true</showsubtitles>
-        <brightness>50.000000</brightness>
-        <contrast>50.000000</contrast>
-        <gamma>20.000000</gamma>
-        <audiodelay>0.000000</audiodelay>
-        <subtitledelay>0.000000</subtitledelay>
-        <nonlinstretch>false</nonlinstretch>
-        <stereomode>0</stereomode>
-    </defaultvideosettings>
     <viewstates>
         <musicfiles>
             <viewmode>720896</viewmode>
