@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
-<addon id="script.tvguidetecbox" version="6.0.24" data_version="0.6.5"></addon>
+<addon id="script.tvguidetecbox" version="6.0.24" data_version="0.6.9"></addon>
 
 <addon id="plugin.video.ufo" version="1.1.4" data_version="0.0.2"></addon>
 
