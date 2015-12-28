@@ -15,7 +15,7 @@
     <audiooutput>
         <ac3passthrough default="true">true</ac3passthrough>
         <ac3transcode default="true">false</ac3transcode>
-        <audiodevice default="true">AUDIOTRACK:AudioTrack</audiodevice>
+        <audiodevice default="true">DIRECTSOUND:default</audiodevice>
         <channels default="true">1</channels>
         <config default="true">2</config>
         <dtshdpassthrough default="true">false</dtshdpassthrough>
@@ -24,7 +24,7 @@
         <guisoundmode default="true">1</guisoundmode>
         <maintainoriginalvolume default="true">true</maintainoriginalvolume>
         <passthrough default="true">false</passthrough>
-        <passthroughdevice default="true">AUDIOTRACK:AudioTrack</passthroughdevice>
+        <passthroughdevice>DIRECTSOUND:{278BC73F-279B-4163-8CBA-B649460329D5}</passthroughdevice>
         <processquality default="true">30</processquality>
         <samplerate default="true">48000</samplerate>
         <stereoupmix default="true">false</stereoupmix>
@@ -86,8 +86,8 @@
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <addonupdates default="true">0</addonupdates>
-        <settinglevel>1</settinglevel>
-        <systemtotaluptime>0</systemtotaluptime>
+        <systemtotaluptime>8929</systemtotaluptime>
+        <settinglevel>3</settinglevel>
     </general>
     <input>
         <enablejoystick default="true">true</enablejoystick>
@@ -113,13 +113,13 @@
         <subtitlelanguage default="true">original</subtitlelanguage>
         <temperatureunit default="true">regional</temperatureunit>
         <timeformat default="true">regional</timeformat>
-        <timezone default="true"></timezone>
-        <timezonecountry default="true"></timezonecountry>
+        <timezone default="true">default</timezone>
+        <timezonecountry default="true">default</timezonecountry>
         <use24hourclock default="true">regional</use24hourclock>
     </locale>
     <lookandfeel>
         <enablerssfeeds>false</enablerssfeeds>
-        <font default="true">Default</font>
+        <font>Arial</font>
         <rssedit default="true"></rssedit>
         <skin>skin.xonfluence</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
@@ -163,7 +163,7 @@
         <replaygaintype default="true">1</replaygaintype>
         <seekdelay default="true">750</seekdelay>
         <seeksteps default="true">-60,-30,-10,10,30,60</seeksteps>
-        <visualisation default="true">visualization.glspectrum</visualisation>
+        <visualisation default="true">visualization.milkdrop</visualisation>
     </musicplayer>
     <mymusic>
         <defaultlibview default="true"></defaultlibview>
@@ -288,10 +288,10 @@
         <useairplaypassword default="true">false</useairplaypassword>
         <webserver>true</webserver>
         <webserverpassword default="true"></webserverpassword>
-        <webserverport default="true">8080</webserverport>
+        <webserverport default="true">80</webserverport>
         <webserverusername default="true">kodi</webserverusername>
         <webskin default="true">webinterface.default</webskin>
-        <zeroconf default="true">true</zeroconf>
+        <zeroconf default="true">false</zeroconf>
     </services>
     <slideshow>
         <displayeffects default="true">true</displayeffects>
@@ -353,10 +353,8 @@
         <useamcodec default="true">true</useamcodec>
         <usedisplayasclock default="true">false</usedisplayasclock>
         <usedxva2 default="true">true</usedxva2>
-        <usemediacodec default="true">true</usemediacodec>
         <useomx default="true">true</useomx>
         <useomxplayer default="true">true</useomxplayer>
-        <usestagefright default="true">true</usestagefright>
         <usevaapi default="true">true</usevaapi>
         <usevaapimpeg2 default="true">true</usevaapimpeg2>
         <usevaapimpeg4 default="true">true</usevaapimpeg4>
@@ -371,13 +369,13 @@
     </videoplayer>
     <videoscreen>
         <blankdisplays default="true">false</blankdisplays>
-        <fakefullscreen default="true">true</fakefullscreen>
+        <fakefullscreen default="true">false</fakefullscreen>
         <limitedrange default="true">false</limitedrange>
         <monitor default="true">Default</monitor>
         <preferedstereoscopicmode default="true">100</preferedstereoscopicmode>
-        <resolution default="true">16</resolution>
-        <screen default="true">0</screen>
-        <screenmode default="true">DESKTOP</screenmode>
+        <resolution>17</resolution>
+        <screen>1</screen>
+        <screenmode>10080000600060.00000pstd</screenmode>
         <stereoscopicmode default="true">0</stereoscopicmode>
         <vsync default="true">2</vsync>
     </videoscreen>
@@ -386,13 +384,660 @@
         <currentlocation default="true">1</currentlocation>
     </weather>
     <window>
-        <height default="true">480</height>
-        <width default="true">720</width>
+        <height>578</height>
+        <width>800</width>
     </window>
-    <audio>
-        <mute>false</mute>
-        <fvolumelevel>1.000000</fvolumelevel>
-    </audio>
+    <resolutions>
+        <resolution>
+            <description>1920x1080@ 60.00 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080@ 30.00i #2 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 75.00 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 60.00 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 59.94 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 75.00 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 60.00 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x576@ 75.00 - Full Screen</description>
+            <subtitles>555</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x576@ 60.00 - Full Screen</description>
+            <subtitles>555</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>800x600@ 75.00 - Full Screen</description>
+            <subtitles>579</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>800x600@ 60.00 - Full Screen</description>
+            <subtitles>579</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1024x768@ 75.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1024x768@ 60.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1152x864@ 75.00 - Full Screen</description>
+            <subtitles>833</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>864</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1152x864@ 60.00 - Full Screen</description>
+            <subtitles>833</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>864</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720@ 59.94 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720@ 60.00 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x768@ 60.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x800@ 60.00 - Full Screen</description>
+            <subtitles>772</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x960@ 75.00 - Full Screen</description>
+            <subtitles>926</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x960@ 60.00 - Full Screen</description>
+            <subtitles>926</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x1024@ 75.00 - Full Screen</description>
+            <subtitles>988</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x1024@ 60.00 - Full Screen</description>
+            <subtitles>988</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1360x768@ 60.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1360</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1366x768@ 60.00 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1366</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1440x900@ 60.00 - Full Screen</description>
+            <subtitles>868</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1440</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1600x900@ 60.00 - Full Screen</description>
+            <subtitles>868</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1680x1050@ 60.00 - Full Screen</description>
+            <subtitles>1013</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080@ 59.94 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 60.00 #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>640x480@ 59.94 #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 59.94 #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 60.00 #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 29.97i #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x480@ 30.00i #2 - Full Screen</description>
+            <subtitles>463</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>720x576@ 60.00 #2 - Full Screen</description>
+            <subtitles>555</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>720</right>
+                <bottom>576</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>800x600@ 60.00 #2 - Full Screen</description>
+            <subtitles>579</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1024x768@ 60.00 #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1152x648@ 59.94 #2 - Full Screen</description>
+            <subtitles>625</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>648</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1152x648@ 60.00 #2 - Full Screen</description>
+            <subtitles>625</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1152</right>
+                <bottom>648</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720@ 59.94 #2 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x720@ 60.00 #2 - Full Screen</description>
+            <subtitles>694</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>720</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x768@ 60.00 #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x960@ 29.97i #2 - Full Screen</description>
+            <subtitles>926</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x960@ 30.00i #2 - Full Screen</description>
+            <subtitles>926</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>960</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x1024@ 29.97i #2 - Full Screen</description>
+            <subtitles>988</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x1024@ 30.00i #2 - Full Screen</description>
+            <subtitles>988</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>1024</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1360x768@ 60.00 #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1360</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1366x768@ 29.97i #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1366</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1366x768@ 30.00i #2 - Full Screen</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1366</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1600x900@ 29.97i #2 - Full Screen</description>
+            <subtitles>868</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1600x900@ 30.00i #2 - Full Screen</description>
+            <subtitles>868</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1600</right>
+                <bottom>900</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1680x1050@ 29.97i #2 - Full Screen</description>
+            <subtitles>1013</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1680x1050@ 30.00i #2 - Full Screen</description>
+            <subtitles>1013</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1680</right>
+                <bottom>1050</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1776x1000@ 29.97i #2 - Full Screen</description>
+            <subtitles>965</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1776</right>
+                <bottom>1000</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1776x1000@ 30.00i #2 - Full Screen</description>
+            <subtitles>965</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1776</right>
+                <bottom>1000</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1920x1080@ 29.97i #2 - Full Screen</description>
+            <subtitles>1042</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1920</right>
+                <bottom>1080</bottom>
+            </overscan>
+        </resolution>
+    </resolutions>
+    <defaultvideosettings>
+        <deinterlacemode>1</deinterlacemode>
+        <interlacemethod>1</interlacemethod>
+        <scalingmethod>1</scalingmethod>
+        <noisereduction>0.000000</noisereduction>
+        <postprocess>false</postprocess>
+        <sharpness>0.000000</sharpness>
+        <viewmode>4</viewmode>
+        <zoomamount>1.000000</zoomamount>
+        <pixelratio>1.333333</pixelratio>
+        <verticalshift>0.000000</verticalshift>
+        <volumeamplification>0.000000</volumeamplification>
+        <outputtoallspeakers>false</outputtoallspeakers>
+        <showsubtitles>false</showsubtitles>
+        <brightness>50.000000</brightness>
+        <contrast>50.000000</contrast>
+        <gamma>20.000000</gamma>
+        <audiodelay>0.000000</audiodelay>
+        <subtitledelay>0.000000</subtitledelay>
+        <nonlinstretch>false</nonlinstretch>
+        <stereomode>0</stereomode>
+    </defaultvideosettings>
     <skinsettings>
         <setting type="bool" name="skin.confluence.Use_Startup_Playlist">false</setting>
         <setting type="bool" name="skin.confluence.UseCustomBackground">false</setting>
@@ -413,24 +1058,67 @@
         <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">false</setting>
         <setting type="bool" name="skin.confluence.AutoScroll">false</setting>
         <setting type="bool" name="skin.confluence.FirstTimeRun">true</setting>
+        <setting type="bool" name="skin.confluence.HideFilenameFlagging">false</setting>
+        <setting type="bool" name="skin.confluence.View508HideInfo">false</setting>
+        <setting type="bool" name="skin.confluence.ActivateTvTunes">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.UseCustomBackground">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HideBackGroundFanart">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.DebugGrid">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HideDebugInfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomepageHideRecentlyAddedVideo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomepageHideRecentlyAddedAlbums">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.homepageWeatherinfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.homepageMusicinfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.homepageVideoinfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoMovieButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoTVShowButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoPicturesButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoMusicButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HomeMenuNoProgramsButton">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.AutoScroll">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.FirstTimeRun">true</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.Show_SlideShow_Paused">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.WindowedTrailer">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HideFilenameFlagging">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.ActivateTvTunes">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.HideVisualizationFanart">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.View508HideInfo">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuVideos">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuPrograms">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuMusic">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuStatus">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuSystem">false</setting>
+        <setting type="bool" name="skin.confluence.startup.init">true</setting>
+        <setting type="bool" name="skin.confluence.osd.usetheme">true</setting>
+        <setting type="bool" name="skin.confluence.global.hidecirles">true</setting>
+        <setting type="bool" name="skin.confluence.home.classicwidgets">true</setting>
+        <setting type="bool" name="skin.confluence.SmartShortcuts.emby">false</setting>
+        <setting type="bool" name="skin.confluence.SmartShortcuts.playlists">false</setting>
+        <setting type="bool" name="skin.confluence.SmartShortcuts.favorites">false</setting>
+        <setting type="bool" name="skin.confluence.SmartShortcuts.plex">false</setting>
+        <setting type="bool" name="skin.confluence.SmartShortcuts.netflix">false</setting>
+        <setting type="bool" name="skin.confluence.EnableNextAiredNotifications">false</setting>
+        <setting type="bool" name="skin.confluence.SkinHelper.EnablePVRThumbs">false</setting>
+        <setting type="bool" name="skin.confluence.hwy2015.AutoFocusUnwatchedEpisode">false</setting>
         <setting type="bool" name="skin.xonfluence.HideAutoMusicViz">false</setting>
         <setting type="bool" name="skin.xonfluence.AutoPartySaver">false</setting>
         <setting type="bool" name="skin.xonfluence.HidePopUpSeekBar">false</setting>
         <setting type="bool" name="skin.xonfluence.NotificationsTopLeft">false</setting>
         <setting type="bool" name="skin.xonfluence.HideBusyAnimation">false</setting>
-        <setting type="bool" name="skin.xonfluence.InitialSetUpRun">true</setting>
-        <setting type="bool" name="skin.xonfluence.Updates_V312">true</setting>
-        <setting type="bool" name="skin.xonfluence.Updates_V314">true</setting>
-        <setting type="bool" name="skin.xonfluence.EnableHomeStats">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableRainDropEffect">false</setting>
-        <setting type="bool" name="skin.xonfluence.HolidayEffects">false</setting>
+        <setting type="bool" name="skin.xonfluence.AllScreenTopLeftWidget">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideTopLeftWindows">false</setting>
         <setting type="bool" name="skin.xonfluence.NoAnimateVizFanart">false</setting>
-        <setting type="bool" name="skin.xonfluence.WrapAroundHomeMenu">false</setting>
         <setting type="bool" name="skin.xonfluence.SingleGlobalBackground">false</setting>
+        <setting type="bool" name="skin.xonfluence.HolidayEffects">false</setting>
         <setting type="bool" name="skin.xonfluence.HideHomeNowPlaying">false</setting>
         <setting type="bool" name="skin.xonfluence.VizOnlyOnHome">false</setting>
         <setting type="bool" name="skin.xonfluence.HideBackgroundCDWall">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableFanartScript">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableFanartScript">true</setting>
         <setting type="bool" name="skin.xonfluence.HideBackGroundFanart">false</setting>
         <setting type="bool" name="skin.xonfluence.EpisodeBackground">false</setting>
         <setting type="bool" name="skin.xonfluence.EnableAdditionalArtWork">false</setting>
@@ -439,33 +1127,46 @@
         <setting type="bool" name="skin.xonfluence.DisableDiscArt">false</setting>
         <setting type="bool" name="skin.xonfluence.DisableLogoArt">false</setting>
         <setting type="bool" name="skin.xonfluence.NoDiffuseVizFanart">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableSlideShowArt">true</setting>
+        <setting type="bool" name="skin.xonfluence.DisableSlideShowArt">false</setting>
         <setting type="bool" name="skin.xonfluence.NoAnimateFanart">false</setting>
         <setting type="bool" name="skin.xonfluence.HidePVRNowPlaying">false</setting>
         <setting type="bool" name="skin.xonfluence.HideHomeFloor">false</setting>
-        <setting type="bool" name="skin.xonfluence.LowerMainMenuBar">true</setting>
+        <setting type="bool" name="skin.xonfluence.HideEpisodeThumb">false</setting>
+        <setting type="bool" name="skin.xonfluence.AutoScroll">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableFloorBtns">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideTrailerBtn">false</setting>
         <setting type="bool" name="skin.xonfluence.HideNowPlayingInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.HidePageCountInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableFloorReturnButtons">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableVolumeButtons">false</setting>
+        <setting type="bool" name="skin.xonfluence.KioskMode">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideSystemTime">false</setting>
+        <setting type="bool" name="skin.xonfluence.AutoFocusUnwatchedEpisode">false</setting>
+        <setting type="bool" name="skin.xonfluence.InitialSetUpRun">true</setting>
+        <setting type="bool" name="skin.xonfluence.Updates_V312">true</setting>
+        <setting type="bool" name="skin.xonfluence.Updates_V314">true</setting>
+        <setting type="bool" name="skin.xonfluence.EnableHomeStats">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableRainDropEffect">true</setting>
+        <setting type="bool" name="skin.xonfluence.WrapAroundHomeMenu">false</setting>
+        <setting type="bool" name="skin.xonfluence.LowerMainMenuBar">false</setting>
         <setting type="bool" name="skin.xonfluence.HideTVRecordingInfo">false</setting>
         <setting type="bool" name="skin.xonfluence.HideYearTitle">false</setting>
         <setting type="bool" name="skin.xonfluence.EnableLargeWidgets">true</setting>
         <setting type="bool" name="skin.xonfluence.HideSuggestedMedia">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideEpisodeThumb">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableScriptPlayList">true</setting>
-        <setting type="bool" name="skin.xonfluence.DisableTVNextAired">true</setting>
+        <setting type="bool" name="skin.xonfluence.DisableScriptPlayList">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableTVNextAired">false</setting>
         <setting type="bool" name="skin.xonfluence.UPnP_Mode">false</setting>
         <setting type="bool" name="skin.xonfluence.DisableGlobalSearch">true</setting>
-        <setting type="bool" name="skin.xonfluence.EnableVolumeButtons">false</setting>
-        <setting type="bool" name="skin.xonfluence.AutoVisableSubMenu">false</setting>
+        <setting type="bool" name="skin.xonfluence.AutoVisableSubMenu">true</setting>
         <setting type="bool" name="skin.xonfluence.HideNextSongsInfo">false</setting>
         <setting type="bool" name="skin.xonfluence.HideHomePowerBtn">false</setting>
         <setting type="bool" name="skin.xonfluence.HideFavorites">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideSystemTime">false</setting>
         <setting type="bool" name="skin.xonfluence.EnablePingWOL">false</setting>
         <setting type="bool" name="skin.xonfluence.HideStartUpBackground">false</setting>
         <setting type="bool" name="skin.xonfluence.UseStartUpPlaylistPath">false</setting>
         <setting type="bool" name="skin.xonfluence.HideKodiIntro">false</setting>
         <setting type="bool" name="skin.xonfluence.DisableTVTunes">true</setting>
-        <setting type="bool" name="skin.xonfluence.DisableWatchItLater">true</setting>
+        <setting type="bool" name="skin.xonfluence.DisableWatchItLater">false</setting>
         <setting type="bool" name="skin.xonfluence.DisableFanartScript">false</setting>
         <setting type="bool" name="skin.xonfluence.HideSeekBarOSD">false</setting>
         <setting type="bool" name="skin.xonfluence.HideArtWorkOSD">false</setting>
@@ -473,21 +1174,20 @@
         <setting type="bool" name="skin.xonfluence.EnablePauseInfo">false</setting>
         <setting type="bool" name="skin.xonfluence.StopAutoScroll">false</setting>
         <setting type="bool" name="skin.xonfluence.EnablePlotInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.emby">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.playlists">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.favorites">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.plex">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.netflix">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableNextAiredNotifications">false</setting>
         <setting type="bool" name="skin.xonfluence.FixedEndingMenu">false</setting>
-        <setting type="bool" name="skin.xonfluence.AllScreenTopLeftWidget">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideTopLeftWindows">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideTrailerBtn">false</setting>
-        <setting type="bool" name="skin.xonfluence.EnableFloorReturnButtons">false</setting>
         <setting type="bool" name="skin.xonfluence.EnableDVDCases">false</setting>
         <setting type="bool" name="skin.xonfluence.UseDiscTypeCase">false</setting>
         <setting type="bool" name="skin.xonfluence.SmallVolumeJump">false</setting>
-        <setting type="bool" name="skin.xonfluence.HidePageCountInfo">false</setting>
         <setting type="bool" name="skin.xonfluence.KeyboardGraphicalTextures">false</setting>
-        <setting type="bool" name="skin.xonfluence.DisableAutoComplete">false</setting>
-        <setting type="bool" name="skin.xonfluence.KioskMode">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableAutoComplete">true</setting>
         <setting type="bool" name="skin.xonfluence.WrapMediaViews">false</setting>
         <setting type="bool" name="skin.xonfluence.MediaShortDescription">false</setting>
-        <setting type="bool" name="skin.xonfluence.AutoScroll">false</setting>
         <setting type="bool" name="skin.xonfluence.Show_SlideShow_Paused">false</setting>
         <setting type="bool" name="skin.xonfluence.WindowedTrailer">false</setting>
         <setting type="bool" name="skin.xonfluence.HideFilenameFlagging">false</setting>
@@ -507,28 +1207,139 @@
         <setting type="bool" name="skin.xonfluence.Enable_CustomHSuspend">false</setting>
         <setting type="bool" name="skin.xonfluence.RestartNotReboot">false</setting>
         <setting type="bool" name="skin.xonfluence.MinimizeOnExit">false</setting>
-        <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton3"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton4"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton5"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton1"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton2"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton3"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton4"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton5"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton1"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton2"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton3"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton4"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton5"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton1"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton2"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton3"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton4"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton5"></setting>
-        <setting type="string" name="skin.xonfluence.UsrColorOne"></setting>
+        <setting type="bool" name="skin.xonfluence.SkinHelper.EnablePVRThumbs">false</setting>
+        <setting type="bool" name="skin.xonfluence.ShowWeatherFanart">false</setting>
+        <setting type="bool" name="skin.xonfluence.WeatherScript_Enable">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableStatusBanner">false</setting>
+        <setting type="bool" name="skin.xonfluence.View515Hidelogo">false</setting>
+        <setting type="bool" name="skin.xonfluence.Disable504FanArt">false</setting>
+        <setting type="bool" name="skin.xonfluence.Enable515WideBanners">false</setting>
+        <setting type="bool" name="skin.xonfluence.Videos_Librarymode">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideWatchedMediaStat">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideNewMediaStat">false</setting>
+        <setting type="bool" name="skin.xonfluence.SkinHelper.EnableExtraFanart">false</setting>
+        <setting type="bool" name="skin.xonfluence.AnimeWindowXMLDialogClose">false</setting>
+        <setting type="string" name="skin.confluence.CustomBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton1">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton2">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton3">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton4">None</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton5">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton1">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton2">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton3">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton4">None</setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton5">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton1">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton2">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton3">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton4">None</setting>
+        <setting type="string" name="skin.confluence.HomePictureButton5">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton1">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton2">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton3">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton4">None</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerSize">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathNF">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathFO">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathDrag">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomPointerPathClick">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.CustomBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton1">script.tvguidetecbox</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton2">plugin.video.ccloudtv</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton3">plugin.video.CanTVLive</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton4">plugin.video.nbanhlstreams</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton5">plugin.video.SportsDevil</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton6">plugin.video.GenieTv</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton7">plugin.video.ufo</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton8">plugin.video.md9movies</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton9">plugin.video.md123movies</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton10">plugin.video.xmovies8</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton11">plugin.video.salts</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton12">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton13">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton14">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton15">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton16">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton17">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton18">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton19">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton20">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton21">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton22">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton23">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton24">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeVideosButton25">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton6">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton7">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton8">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton9">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeMusicButton10">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton6">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton7">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton8">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton9">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomePictureButton10">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton6">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton7">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton8">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton9">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.HomeProgramButton10">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.Startup_Playlist_Path">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.LyricScript_Path">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.RandomFanartDelay">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.PicturesBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.CustomPicturesBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.CustomStudioImagesPath">None</setting>
+        <setting type="string" name="skin.confluence.SkinHelper.PicturesBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_TV_Folder">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.CustomBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeVideosButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeMusicButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomePictureButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton1">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton2">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton3">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton4">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.HomeProgramButton5">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.PicturesBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.CustomPicturesBackgroundPath">None</setting>
+        <setting type="string" name="skin.confluence.hwymod2015.SkinHelper.RandomFanartDelay">None</setting>
+        <setting type="string" name="skin.confluence.SkinHelper.RandomFanartDelay">None</setting>
+        <setting type="string" name="skin.confluence.SkinHelper.CustomPicturesBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.SkinHelper.CustomStudioImagesPath"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.ForcedViews.programs"></setting>
+        <setting type="string" name="skin.confluence.hwy2015.SkinHelper.ForcedViews."></setting>
+        <setting type="string" name="skin.xonfluence.UsrColorOne">aliceblue</setting>
+        <setting type="string" name="skin.xonfluence.MediaPanelTrans">None</setting>
         <setting type="string" name="skin.xonfluence.GlobalBackGroundPath">None</setting>
         <setting type="string" name="skin.xonfluence.HolidayThemePath">special://skin/extras/Holiday/xmastree.jpg</setting>
         <setting type="string" name="skin.xonfluence.WeatherFanartDir">special://skin/extras/Weather/</setting>
@@ -545,11 +1356,98 @@
         <setting type="string" name="skin.xonfluence.HomeItem.7.Fanart"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Fanart">special://skin/backgrounds/videos.jpg</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Fanart">special://skin/backgrounds/programs.jpg</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Fanart"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Fanart">special://skin/backgrounds/settings.jpg</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.11.Fanart"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Fanart">special://skin/backgrounds/settings.jpg</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Fanart"></setting>
         <setting type="string" name="skin.xonfluence.PhysicalMusicFolder">None</setting>
         <setting type="string" name="skin.xonfluence.UsrAlbumThumbsDir">None</setting>
+        <setting type="string" name="skin.xonfluence.SkinHelper.RandomFanartDelay">None</setting>
+        <setting type="string" name="skin.xonfluence.SkinHelper.ForcedViews.programs">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Label">Weather</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Path">ActivateWindow(Weather)</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Sub">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Addon">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Widget">Weather</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Type">Weather</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Display">Live</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.2.Label">Live TV</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.2.Path">RunAddon()</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.2.Sub">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.2.Addon">AddonSetOne</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.2.Widget">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.2.Type">AddOns</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.2.Display">Default</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.3.Label">Movies</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.3.Path">ActivateWindow(Videos,,return)</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.3.Sub">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.3.Addon">AddonSetTwo</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.3.Widget">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.3.Type">Streaming</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.3.Display">Default</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.4.Label">TV Shows</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.4.Path">ActivateWindow(Videos,,return)</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.4.Sub">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.4.Addon">AddonSetThree</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.4.Widget">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.4.Type">Streaming</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.4.Display">Default</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.5.Label">Music</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.5.Path">ActivateWindow(Music)</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.5.Sub">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.5.Addon">AddonSetFour</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.5.Widget">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.5.Type">Music</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.5.Display">Default</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.6.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.6.Addon"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.6.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.6.Type"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.6.Display"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.7.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.7.Addon"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.7.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.7.Type"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.7.Display"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Label">Video Add-ons</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Path">ActivateWindow(Videos,Addons,return)</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Sub">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Addon">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Widget">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Type">Videos</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Display"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.9.Label">Programs</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.9.Path">ActivateWindow(Programs,Addons,return)</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.9.Sub">Programs</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.9.Addon">Programs</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.9.Widget">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.9.Type">Programs</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.9.Display">Default</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Label">System</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Path">ActivateWindow(Settings)</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Sub">Settings</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Addon">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Widget">None</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Type">Settings</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Display">Default</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.11.Label"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.11.Path"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.11.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.11.Addon"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.11.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.11.Type"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.11.Display"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Label"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Path"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Addon"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Type"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Display"></setting>
+        <setting type="string" name="skin.xonfluence.FanArtCycleRate">20</setting>
         <setting type="string" name="skin.xonfluence.TopLeftHomeInfo">Profile</setting>
         <setting type="string" name="skin.xonfluence.UPnPServer">None</setting>
         <setting type="string" name="skin.xonfluence.UPnP_Path">None</setting>
@@ -564,331 +1462,247 @@
         <setting type="string" name="skin.xonfluence.HomeItem.9.Playlist">None</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.10.Playlist"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.11.Playlist"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Playlist">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubVideos.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMusic.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubSettings.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.1.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.1.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.2.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.2.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.3.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.3.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.4.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.4.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.5.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.5.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubPictures.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubMovies.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubTVShows.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.1.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.1.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.2.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.2.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.3.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.3.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.4.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.4.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.5.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.5.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.6.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.6.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.7.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.7.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.8.Label">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.8.Path">Hidden</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubOne.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSubTwo.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubProg.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.1.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.1.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.2.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.2.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.3.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.3.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.4.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.4.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.5.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.5.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.6.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.6.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.7.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.7.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.8.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.8.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.9.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.9.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.10.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.SubRadio.10.Path">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Label">Weather</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Path">ActivateWindow(Weather)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Sub">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Type">Weather</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Addon">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Widget">Weather</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Display">Live</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.2.Label">Live TV</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.2.Path">RunAddon()</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.2.Sub">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.2.Type">AddOns</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.2.Addon">AddonSetOne</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.2.Widget">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.2.Display">Default</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.3.Label">Movies</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.3.Path">ActivateWindow(Videos,,return)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.3.Sub">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.3.Type">Streaming</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.3.Addon">AddonSetTwo</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.3.Widget">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.3.Display">Default</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.4.Label">TV Shows</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.4.Path">ActivateWindow(Videos,,return)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.4.Sub">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.4.Type">Streaming</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.4.Addon">AddonSetThree</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.4.Widget">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.4.Display">Default</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.5.Label">Music</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.5.Path">ActivateWindow(Music)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.5.Sub">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.5.Type">Music</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.5.Addon">AddonSetFour</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.5.Widget">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.5.Display">Default</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.6.Label"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.6.Path"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.6.Sub"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.6.Type"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.6.Addon"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.6.Widget"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.6.Display"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.7.Label"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.7.Path"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.7.Sub"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.7.Type"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.7.Addon"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.7.Widget"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.7.Display"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Label">Video Add-ons</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Path">ActivateWindow(Videos,Addons,return)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Sub">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Type">Videos</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Addon">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Widget">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Display">Default</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.9.Label">Programs</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.9.Path">ActivateWindow(Programs,Addons,return)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.9.Sub">Programs</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.9.Type">Programs</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.9.Addon">Programs</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.9.Widget">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.9.Display">Default</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Label"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Path"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Sub"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Type"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Addon"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Widget"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Display"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.11.Label"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.11.Path"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.11.Sub"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.11.Type"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.11.Addon"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.11.Widget"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.11.Display"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Label">System</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Path">ActivateWindow(Settings)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Sub">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Type">Settings</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Addon">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Widget">None</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Display">Default</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Playlist"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubVideos.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMusic.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubSettings.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubPictures.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubMovies.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubTVShows.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubOne.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSubTwo.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubProg.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.1.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.2.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.2.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.3.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.3.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.4.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.4.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.6.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.6.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.7.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.7.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.8.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.8.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.9.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.9.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.SubRadio.10.Path"></setting>
         <setting type="string" name="skin.xonfluence.AddonSetOne.1.Label">TV Guide</setting>
         <setting type="string" name="skin.xonfluence.AddonSetOne.1.Icon">special://home/addons/script.tvguidetecbox\icon.png</setting>
         <setting type="string" name="skin.xonfluence.AddonSetOne.1.Path">RunAddon(script.tvguidetecbox)</setting>
@@ -1143,10 +1957,6 @@
         <setting type="string" name="skin.xonfluence.AddonSetTwelve.7.Path">None</setting>
         <setting type="string" name="skin.xonfluence.WOLPingTimer">None</setting>
         <setting type="string" name="skin.xonfluence.PingMacAddr">None</setting>
-        <setting type="string" name="skin.xonfluence.FanArtCycleRate">20</setting>
-        <setting type="string" name="skin.xonfluence.MediaPanelTrans">None</setting>
-        <setting type="string" name="skin.xonfluence.SkinHelper.RandomFanartDelay">None</setting>
-        <setting type="string" name="skin.xonfluence.SkinHelper.ForcedViews.programs">None</setting>
         <setting type="string" name="skin.xonfluence.StartUpBackgroundPath">special://skin/backgrounds/startup.jpg</setting>
         <setting type="string" name="skin.xonfluence.InitialMenuItem">None</setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.PicturesBackgroundPath">None</setting>
@@ -1162,17 +1972,17 @@
         <setting type="string" name="skin.xonfluence.UserMoviesSubMenu"></setting>
         <setting type="string" name="skin.xonfluence.UserTVShowsSubMenu"></setting>
         <setting type="string" name="skin.xonfluence.UserConcertsSubMenu"></setting>
-        <setting type="string" name="skin.xonfluence.UserMusicSubMenu">None</setting>
-        <setting type="string" name="skin.xonfluence.UserProgsSubMenu">None</setting>
-        <setting type="string" name="skin.xonfluence.UserPicturesSubMenu">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSelectOneSubMenu">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSelectTwoSubMenu">None</setting>
-        <setting type="string" name="skin.xonfluence.UserRadioSubMenu">None</setting>
+        <setting type="string" name="skin.xonfluence.UserMusicSubMenu"></setting>
+        <setting type="string" name="skin.xonfluence.UserProgsSubMenu"></setting>
+        <setting type="string" name="skin.xonfluence.UserPicturesSubMenu"></setting>
+        <setting type="string" name="skin.xonfluence.UserSelectOneSubMenu"></setting>
+        <setting type="string" name="skin.xonfluence.UserSelectTwoSubMenu"></setting>
+        <setting type="string" name="skin.xonfluence.UserRadioSubMenu"></setting>
         <setting type="string" name="skin.xonfluence.UserSelectAddon.1.Label">Live TV</setting>
         <setting type="string" name="skin.xonfluence.UserSelectAddon.2.Label">Movies</setting>
         <setting type="string" name="skin.xonfluence.UserSelectAddon.3.Label">TV Shows</setting>
         <setting type="string" name="skin.xonfluence.UserSelectAddon.4.Label">Music</setting>
-        <setting type="string" name="skin.xonfluence.UserSelectAddon.5.Label"></setting>
+        <setting type="string" name="skin.xonfluence.UserSelectAddon.5.Label">None</setting>
         <setting type="string" name="skin.xonfluence.UserSelectAddon.6.Label">None</setting>
         <setting type="string" name="skin.xonfluence.UserSelectAddon.7.Label">None</setting>
         <setting type="string" name="skin.xonfluence.UserSelectAddon.8.Label">None</setting>
@@ -1180,8 +1990,8 @@
         <setting type="string" name="skin.xonfluence.UserSelectAddon.10.Label">None</setting>
         <setting type="string" name="skin.xonfluence.UserSelectAddon.11.Label">None</setting>
         <setting type="string" name="skin.xonfluence.UserSelectAddon.12.Label">None</setting>
-        <setting type="string" name="skin.xonfluence.UserLiveTVSubMenu">None</setting>
-        <setting type="string" name="skin.xonfluence.UserSettingsSubMenu">None</setting>
+        <setting type="string" name="skin.xonfluence.UserLiveTVSubMenu"></setting>
+        <setting type="string" name="skin.xonfluence.UserSettingsSubMenu"></setting>
         <setting type="string" name="skin.xonfluence.UPnP_Name">None</setting>
         <setting type="string" name="skin.xonfluence.StartUpPlaylistPath">None</setting>
         <setting type="string" name="skin.xonfluence.LyricScript_Path">None</setting>
@@ -1230,29 +2040,6 @@
         <setting type="string" name="skin.xonfluence.HomeProgramButton4">None</setting>
         <setting type="string" name="skin.xonfluence.HomeProgramButton5">None</setting>
     </skinsettings>
-    <resolutions />
-    <defaultvideosettings>
-        <deinterlacemode>1</deinterlacemode>
-        <interlacemethod>1</interlacemethod>
-        <scalingmethod>1</scalingmethod>
-        <noisereduction>0.000000</noisereduction>
-        <postprocess>false</postprocess>
-        <sharpness>0.000000</sharpness>
-        <viewmode>0</viewmode>
-        <zoomamount>1.000000</zoomamount>
-        <pixelratio>1.000000</pixelratio>
-        <verticalshift>0.000000</verticalshift>
-        <volumeamplification>0.000000</volumeamplification>
-        <outputtoallspeakers>false</outputtoallspeakers>
-        <showsubtitles>true</showsubtitles>
-        <brightness>50.000000</brightness>
-        <contrast>50.000000</contrast>
-        <gamma>20.000000</gamma>
-        <audiodelay>0.000000</audiodelay>
-        <subtitledelay>0.000000</subtitledelay>
-        <nonlinstretch>false</nonlinstretch>
-        <stereomode>0</stereomode>
-    </defaultvideosettings>
     <viewstates>
         <musicfiles>
             <viewmode>720896</viewmode>
@@ -1297,9 +2084,9 @@
             <sortattributes>0</sortattributes>
         </programs>
         <videofiles>
-            <viewmode>720896</viewmode>
-            <sortmethod>1</sortmethod>
-            <sortorder>1</sortorder>
+            <viewmode>66036</viewmode>
+            <sortmethod>0</sortmethod>
+            <sortorder>0</sortorder>
             <sortattributes>0</sortattributes>
         </videofiles>
         <videonavactors>
@@ -1351,4 +2138,8 @@
             <sortattributes>0</sortattributes>
         </videonavyears>
     </viewstates>
+    <audio>
+        <mute>false</mute>
+        <fvolumelevel>0.868889</fvolumelevel>
+    </audio>
 </settings>
