@@ -2,7 +2,7 @@
 <addons>
 <addon id="skin.xonfluence" version="3.1.6" data_version="0.0.2"></addon>
 
-<addon id="script.tvguidetecbox" version="6.0.24" data_version="0.7.5"></addon>
+<addon id="script.tvguidetecbox" version="6.0.24" data_version="0.7.7"></addon>
 
 <addon id="plugin.video.ufo" version="1.1.4" data_version="0.0.3"></addon>
 
