@@ -61,7 +61,7 @@
 
 <addon id="plugin.audio.shoutcast" version="2.3.0" data_version="0.0.1"></addon>
 
-<addon id="plugin.video.vevo" version="0.82" data_version="0.0.1"></addon>
+<addon id="plugin.video.vevo" version="0.8.2" data_version="0.0.1"></addon>
 
 <!-- end audio -->
 
