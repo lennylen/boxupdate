@@ -1143,8 +1143,8 @@
         <setting type="bool" name="skin.xonfluence.HideSuggestedMedia">false</setting>
         <setting type="bool" name="skin.xonfluence.DisableScriptPlayList">false</setting>
         <setting type="bool" name="skin.xonfluence.DisableTVNextAired">false</setting>
-        <setting type="bool" name="skin.xonfluence.UPnP_Mode">true</setting>
-        <setting type="bool" name="skin.xonfluence.DisableGlobalSearch">false</setting>
+        <setting type="bool" name="skin.xonfluence.UPnP_Mode">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableGlobalSearch">true</setting>
         <setting type="bool" name="skin.xonfluence.AutoVisableSubMenu">true</setting>
         <setting type="bool" name="skin.xonfluence.HideNextSongsInfo">false</setting>
         <setting type="bool" name="skin.xonfluence.HideHomePowerBtn">false</setting>
@@ -1172,7 +1172,7 @@
         <setting type="bool" name="skin.xonfluence.EnableDVDCases">false</setting>
         <setting type="bool" name="skin.xonfluence.UseDiscTypeCase">false</setting>
         <setting type="bool" name="skin.xonfluence.SmallVolumeJump">false</setting>
-        <setting type="bool" name="skin.xonfluence.KeyboardGraphicalTextures">false</setting>
+        <setting type="bool" name="skin.xonfluence.KeyboardGraphicalTextures">true</setting>
         <setting type="bool" name="skin.xonfluence.DisableAutoComplete">true</setting>
         <setting type="bool" name="skin.xonfluence.WrapMediaViews">false</setting>
         <setting type="bool" name="skin.xonfluence.MediaShortDescription">false</setting>
