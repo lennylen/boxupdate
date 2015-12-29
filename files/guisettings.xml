@@ -972,8 +972,8 @@
         <setting type="string" name="skin.xonfluence.AddonSetFour.3.Icon">special://home/addons/plugin.audio.shoutcast\icon.png</setting>
         <setting type="string" name="skin.xonfluence.AddonSetFour.3.Path">RunAddon(plugin.audio.shoutcast)</setting>
         <setting type="string" name="skin.xonfluence.AddonSetFour.4.Label">VEVO</setting>
-        <setting type="string" name="skin.xonfluence.AddonSetFour.4.Icon">special://home/addons/plugin.video.myvevo\icon.png</setting>
-        <setting type="string" name="skin.xonfluence.AddonSetFour.4.Path">RunAddon(plugin.video.myvevo)</setting>
+        <setting type="string" name="skin.xonfluence.AddonSetFour.4.Icon">special://home/addons/plugin.video.vevo\icon.png</setting>
+        <setting type="string" name="skin.xonfluence.AddonSetFour.4.Path">RunAddon(plugin.video.vevo)</setting>
         <setting type="string" name="skin.xonfluence.AddonSetFour.5.Label"></setting>
         <setting type="string" name="skin.xonfluence.AddonSetFour.5.Icon"></setting>
         <setting type="string" name="skin.xonfluence.AddonSetFour.5.Path"></setting>
