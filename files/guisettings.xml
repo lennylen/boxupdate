@@ -119,7 +119,7 @@
     </locale>
     <lookandfeel>
         <enablerssfeeds>false</enablerssfeeds>
-        <font>Arial</font>
+        <font>Default</font>
         <rssedit default="true"></rssedit>
         <skin>skin.xonfluence</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
