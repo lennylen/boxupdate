@@ -1172,7 +1172,7 @@
         <setting type="bool" name="skin.xonfluence.EnableDVDCases">false</setting>
         <setting type="bool" name="skin.xonfluence.UseDiscTypeCase">false</setting>
         <setting type="bool" name="skin.xonfluence.SmallVolumeJump">false</setting>
-        <setting type="bool" name="skin.xonfluence.KeyboardGraphicalTextures">false</setting>
+        <setting type="bool" name="skin.xonfluence.KeyboardGraphicalTextures">true</setting>
         <setting type="bool" name="skin.xonfluence.DisableAutoComplete">true</setting>
         <setting type="bool" name="skin.xonfluence.WrapMediaViews">false</setting>
         <setting type="bool" name="skin.xonfluence.MediaShortDescription">false</setting>
