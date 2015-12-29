@@ -1093,20 +1093,143 @@
         <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuMusic">false</setting>
         <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuStatus">false</setting>
         <setting type="bool" name="skin.confluence.hwy2015.RSideSubMenuSystem">false</setting>
-        <setting type="bool" name="skin.confluence.startup.init">true</setting>
-        <setting type="bool" name="skin.confluence.osd.usetheme">true</setting>
-        <setting type="bool" name="skin.confluence.global.hidecirles">true</setting>
-        <setting type="bool" name="skin.confluence.home.classicwidgets">true</setting>
+        <setting type="bool" name="skin.xonfluence.HideAutoMusicViz">false</setting>
+        <setting type="bool" name="skin.xonfluence.AutoPartySaver">false</setting>
+        <setting type="bool" name="skin.xonfluence.HidePopUpSeekBar">false</setting>
+        <setting type="bool" name="skin.xonfluence.NotificationsTopLeft">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideBusyAnimation">false</setting>
+        <setting type="bool" name="skin.xonfluence.AllScreenTopLeftWidget">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideTopLeftWindows">false</setting>
+        <setting type="bool" name="skin.xonfluence.NoAnimateVizFanart">false</setting>
+        <setting type="bool" name="skin.xonfluence.SingleGlobalBackground">false</setting>
+        <setting type="bool" name="skin.xonfluence.HolidayEffects">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideHomeNowPlaying">false</setting>
+        <setting type="bool" name="skin.xonfluence.VizOnlyOnHome">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideBackgroundCDWall">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableFanartScript">true</setting>
+        <setting type="bool" name="skin.xonfluence.HideBackGroundFanart">false</setting>
+        <setting type="bool" name="skin.xonfluence.EpisodeBackground">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableAdditionalArtWork">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideListItemArtWork">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableClearArt">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableDiscArt">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableLogoArt">false</setting>
+        <setting type="bool" name="skin.xonfluence.NoDiffuseVizFanart">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableSlideShowArt">false</setting>
+        <setting type="bool" name="skin.xonfluence.NoAnimateFanart">false</setting>
+        <setting type="bool" name="skin.xonfluence.HidePVRNowPlaying">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideHomeFloor">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideEpisodeThumb">false</setting>
+        <setting type="bool" name="skin.xonfluence.AutoScroll">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableFloorBtns">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideTrailerBtn">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideNowPlayingInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.HidePageCountInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableFloorReturnButtons">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableVolumeButtons">false</setting>
+        <setting type="bool" name="skin.xonfluence.KioskMode">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideSystemTime">false</setting>
+        <setting type="bool" name="skin.xonfluence.AutoFocusUnwatchedEpisode">false</setting>
+        <setting type="bool" name="skin.xonfluence.InitialSetUpRun">true</setting>
+        <setting type="bool" name="skin.xonfluence.Updates_V312">true</setting>
+        <setting type="bool" name="skin.xonfluence.Updates_V314">true</setting>
+        <setting type="bool" name="skin.xonfluence.EnableHomeStats">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableRainDropEffect">true</setting>
+        <setting type="bool" name="skin.xonfluence.WrapAroundHomeMenu">false</setting>
+        <setting type="bool" name="skin.xonfluence.LowerMainMenuBar">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideTVRecordingInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideYearTitle">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableLargeWidgets">true</setting>
+        <setting type="bool" name="skin.xonfluence.HideSuggestedMedia">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableScriptPlayList">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableTVNextAired">false</setting>
+        <setting type="bool" name="skin.xonfluence.UPnP_Mode">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableGlobalSearch">true</setting>
+        <setting type="bool" name="skin.xonfluence.AutoVisableSubMenu">true</setting>
+        <setting type="bool" name="skin.xonfluence.HideNextSongsInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideHomePowerBtn">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideFavorites">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnablePingWOL">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideStartUpBackground">false</setting>
+        <setting type="bool" name="skin.xonfluence.UseStartUpPlaylistPath">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideKodiIntro">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableTVTunes">true</setting>
+        <setting type="bool" name="skin.xonfluence.DisableWatchItLater">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableFanartScript">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideSeekBarOSD">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideArtWorkOSD">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideInfoStartOSD">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnablePauseInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.StopAutoScroll">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnablePlotInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.emby">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.playlists">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.favorites">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.plex">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmartShortcuts.netflix">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableNextAiredNotifications">false</setting>
+        <setting type="bool" name="skin.xonfluence.FixedEndingMenu">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableDVDCases">false</setting>
+        <setting type="bool" name="skin.xonfluence.UseDiscTypeCase">false</setting>
+        <setting type="bool" name="skin.xonfluence.SmallVolumeJump">false</setting>
+        <setting type="bool" name="skin.xonfluence.KeyboardGraphicalTextures">false</setting>
+        <setting type="bool" name="skin.xonfluence.DisableAutoComplete">true</setting>
+        <setting type="bool" name="skin.xonfluence.WrapMediaViews">false</setting>
+        <setting type="bool" name="skin.xonfluence.MediaShortDescription">false</setting>
+        <setting type="bool" name="skin.xonfluence.Show_SlideShow_Paused">false</setting>
+        <setting type="bool" name="skin.xonfluence.WindowedTrailer">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideFilenameFlagging">false</setting>
+        <setting type="bool" name="skin.xonfluence.MinimalPictureInfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableCDArtWork">false</setting>
+        <setting type="bool" name="skin.xonfluence.Show_Suspend">false</setting>
+        <setting type="bool" name="skin.xonfluence.AutoHidePowerBtn">false</setting>
+        <setting type="bool" name="skin.xonfluence.Show_Hibernate">false</setting>
+        <setting type="bool" name="skin.xonfluence.Show_Logoff">false</setting>
+        <setting type="bool" name="skin.xonfluence.Show_Mastermode">false</setting>
+        <setting type="bool" name="skin.xonfluence.Show_Timer">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableAutoUpdateArt">false</setting>
+        <setting type="bool" name="skin.xonfluence.Enable_CustomShutDown">false</setting>
+        <setting type="bool" name="skin.xonfluence.Enable_CustomTimer">false</setting>
+        <setting type="bool" name="skin.xonfluence.Enable_CustomHibernate">false</setting>
+        <setting type="bool" name="skin.xonfluence.Enable_CustomSuspend">false</setting>
+        <setting type="bool" name="skin.xonfluence.Enable_CustomHSuspend">false</setting>
+        <setting type="bool" name="skin.xonfluence.RestartNotReboot">false</setting>
+        <setting type="bool" name="skin.xonfluence.MinimizeOnExit">false</setting>
+        <setting type="bool" name="skin.xonfluence.SkinHelper.EnablePVRThumbs">false</setting>
+        <setting type="bool" name="skin.xonfluence.ShowWeatherFanart">false</setting>
+        <setting type="bool" name="skin.xonfluence.WeatherScript_Enable">false</setting>
+        <setting type="bool" name="skin.xonfluence.EnableStatusBanner">false</setting>
+        <setting type="bool" name="skin.xonfluence.View515Hidelogo">false</setting>
+        <setting type="bool" name="skin.xonfluence.Disable504FanArt">false</setting>
+        <setting type="bool" name="skin.xonfluence.Enable515WideBanners">false</setting>
+        <setting type="bool" name="skin.xonfluence.Videos_Librarymode">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideWatchedMediaStat">false</setting>
+        <setting type="bool" name="skin.xonfluence.HideNewMediaStat">false</setting>
+        <setting type="bool" name="skin.xonfluence.SkinHelper.EnableExtraFanart">false</setting>
+        <setting type="bool" name="skin.xonfluence.AnimeWindowXMLDialogClose">false</setting>
+        <setting type="bool" name="skin.xonfluence.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.xonfluence.UseCustomBackground">false</setting>
+        <setting type="bool" name="skin.xonfluence.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.xonfluence.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.xonfluence.HomepageHideRecentlyAddedVideo">false</setting>
+        <setting type="bool" name="skin.xonfluence.HomepageHideRecentlyAddedAlbums">false</setting>
+        <setting type="bool" name="skin.xonfluence.homepageWeatherinfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.homepageMusicinfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.homepageVideoinfo">false</setting>
+        <setting type="bool" name="skin.xonfluence.HomeMenuNoMovieButton">false</setting>
+        <setting type="bool" name="skin.xonfluence.HomeMenuNoTVShowButton">false</setting>
+        <setting type="bool" name="skin.xonfluence.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.xonfluence.HomeMenuNoPicturesButton">false</setting>
+        <setting type="bool" name="skin.xonfluence.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.xonfluence.HomeMenuNoMusicButton">false</setting>
+        <setting type="bool" name="skin.xonfluence.HomeMenuNoProgramsButton">false</setting>
         <setting type="bool" name="skin.confluence.SmartShortcuts.emby">false</setting>
         <setting type="bool" name="skin.confluence.SmartShortcuts.playlists">false</setting>
         <setting type="bool" name="skin.confluence.SmartShortcuts.favorites">false</setting>
         <setting type="bool" name="skin.confluence.SmartShortcuts.plex">false</setting>
         <setting type="bool" name="skin.confluence.SmartShortcuts.netflix">false</setting>
         <setting type="bool" name="skin.confluence.EnableNextAiredNotifications">false</setting>
-        <setting type="bool" name="skin.confluence.SkinHelper.EnablePVRThumbs">false</setting>
-        <setting type="bool" name="skin.confluence.hwy2015.AutoFocusUnwatchedEpisode">false</setting>
-        <setting type="bool" name="skin.xonfluence.HideAutoMusicViz">false</setting>
-        <setting type="bool" name="skin.xonfluence.AutoPartySaver">false</setting>
+		<setting type="bool" name="skin.xonfluence.AutoPartySaver">false</setting>
         <setting type="bool" name="skin.xonfluence.HidePopUpSeekBar">false</setting>
         <setting type="bool" name="skin.xonfluence.NotificationsTopLeft">false</setting>
         <setting type="bool" name="skin.xonfluence.HideBusyAnimation">false</setting>
@@ -1338,7 +1461,7 @@
         <setting type="string" name="skin.confluence.SkinHelper.CustomStudioImagesPath"></setting>
         <setting type="string" name="skin.confluence.hwy2015.SkinHelper.ForcedViews.programs"></setting>
         <setting type="string" name="skin.confluence.hwy2015.SkinHelper.ForcedViews."></setting>
-        <setting type="string" name="skin.xonfluence.UsrColorOne">aliceblue</setting>
+        <setting type="string" name="skin.xonfluence.UsrColorOne"></setting>
         <setting type="string" name="skin.xonfluence.MediaPanelTrans"></setting>
         <setting type="string" name="skin.xonfluence.GlobalBackGroundPath"></setting>
         <setting type="string" name="skin.xonfluence.HolidayThemePath">special://skin/extras/Holiday/xmastree.jpg</setting>
@@ -1356,9 +1479,9 @@
         <setting type="string" name="skin.xonfluence.HomeItem.7.Fanart"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Fanart">special://skin/backgrounds/videos.jpg</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Fanart">special://skin/backgrounds/programs.jpg</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Fanart">special://skin/backgrounds/settings.jpg</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Fanart"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.11.Fanart"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Fanart"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Fanart">special://skin/backgrounds/settings.jpg</setting>
         <setting type="string" name="skin.xonfluence.PhysicalMusicFolder"></setting>
         <setting type="string" name="skin.xonfluence.UsrAlbumThumbsDir"></setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.RandomFanartDelay"></setting>
@@ -1369,10 +1492,10 @@
         <setting type="string" name="skin.xonfluence.HomeItem.1.Addon"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.1.Widget">Weather</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.1.Type">Weather</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.1.Display">Live</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.1.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.2.Label">Live TV</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.2.Path">RunAddon()</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.2.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.2.Sub">LiveTV</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.2.Addon">AddonSetOne</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.2.Widget"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.2.Type">AddOns</setting>
@@ -1393,9 +1516,9 @@
         <setting type="string" name="skin.xonfluence.HomeItem.4.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.5.Label">Music</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.5.Path">ActivateWindow(Music)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.5.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.5.Sub">Music</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.5.Addon">AddonSetFour</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.5.Widget"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.5.Widget">RecentAlbums</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.5.Type">Music</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.5.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.6.Label"></setting>
@@ -1414,11 +1537,11 @@
         <setting type="string" name="skin.xonfluence.HomeItem.7.Display"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Label">Video Add-ons</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Path">ActivateWindow(Videos,Addons,return)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Sub">Videos</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Addon"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Widget"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.8.Type">Videos</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.8.Display"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.8.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Label">Programs</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Path">ActivateWindow(Programs,Addons,return)</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Sub">Programs</setting>
@@ -1426,13 +1549,13 @@
         <setting type="string" name="skin.xonfluence.HomeItem.9.Widget"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Type">Programs</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.9.Display">Default</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Label">System</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Path">ActivateWindow(Settings)</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Sub">Settings</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Label"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Path"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Sub"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.10.Addon"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.10.Widget"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Type">Settings</setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.10.Display">Default</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Type"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.10.Display"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.11.Label"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.11.Path"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.11.Sub"></setting>
@@ -1440,13 +1563,13 @@
         <setting type="string" name="skin.xonfluence.HomeItem.11.Widget"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.11.Type"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.11.Display"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Label"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Path"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Sub"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Label">System</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Path">ActivateWindow(Settings)</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Sub">Settings</setting>
         <setting type="string" name="skin.xonfluence.HomeItem.12.Addon"></setting>
         <setting type="string" name="skin.xonfluence.HomeItem.12.Widget"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Type"></setting>
-        <setting type="string" name="skin.xonfluence.HomeItem.12.Display"></setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Type">Settings</setting>
+        <setting type="string" name="skin.xonfluence.HomeItem.12.Display">Default</setting>
         <setting type="string" name="skin.xonfluence.FanArtCycleRate">20</setting>
         <setting type="string" name="skin.xonfluence.TopLeftHomeInfo">Profile</setting>
         <setting type="string" name="skin.xonfluence.UPnPServer"></setting>
@@ -1523,16 +1646,16 @@
         <setting type="string" name="skin.xonfluence.SubSettings.9.Path"></setting>
         <setting type="string" name="skin.xonfluence.SubSettings.10.Label"></setting>
         <setting type="string" name="skin.xonfluence.SubSettings.10.Path"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.1.Label"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.1.Path"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.2.Label"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.2.Path"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.3.Label"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.3.Path"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.4.Label"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.4.Path"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.5.Label"></setting>
-        <setting type="string" name="skin.xonfluence.SubLiveTV.5.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.1.Label">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.1.Path">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.2.Label">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.2.Path">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.3.Label">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.3.Path">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.4.Label">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.4.Path">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.5.Label">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubLiveTV.5.Path">Hidden</setting>
         <setting type="string" name="skin.xonfluence.SubLiveTV.6.Label"></setting>
         <setting type="string" name="skin.xonfluence.SubLiveTV.6.Path"></setting>
         <setting type="string" name="skin.xonfluence.SubLiveTV.7.Label"></setting>
@@ -1603,8 +1726,8 @@
         <setting type="string" name="skin.xonfluence.SubTVShows.9.Path"></setting>
         <setting type="string" name="skin.xonfluence.SubTVShows.10.Label"></setting>
         <setting type="string" name="skin.xonfluence.SubTVShows.10.Path"></setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.1.Label"></setting>
-        <setting type="string" name="skin.xonfluence.SubConcerts.1.Path"></setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.1.Label">Hidden</setting>
+        <setting type="string" name="skin.xonfluence.SubConcerts.1.Path">Hidden</setting>
         <setting type="string" name="skin.xonfluence.SubConcerts.2.Label"></setting>
         <setting type="string" name="skin.xonfluence.SubConcerts.2.Path"></setting>
         <setting type="string" name="skin.xonfluence.SubConcerts.3.Label"></setting>
@@ -1961,7 +2084,7 @@
         <setting type="string" name="skin.xonfluence.InitialMenuItem"></setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.PicturesBackgroundPath"></setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.CustomPicturesBackgroundPath"></setting>
-        <setting type="string" name="skin.xonfluence.LastVideoPlayed">PlayMedia(&quot;&quot;)</setting>
+        <setting type="string" name="skin.xonfluence.LastVideoPlayed">PlayMedia(&quot;special://skin/extras/Intro/KODI-Intro-Video.mp4&quot;)</setting>
         <setting type="string" name="skin.xonfluence.SkinHelper.CustomStudioImagesPath"></setting>
         <setting type="string" name="skin.xonfluence.MPAACertificate"></setting>
         <setting type="string" name="skin.xonfluence.MusicOSDInfo"></setting>
@@ -2004,7 +2127,7 @@
         <setting type="string" name="skin.xonfluence.CustomSuspend"></setting>
         <setting type="string" name="skin.xonfluence.CustomSuspendArg"></setting>
         <setting type="string" name="skin.xonfluence.InitialMenuPosi"></setting>
-        <setting type="string" name="skin.xonfluence.UsrSelectAddon"></setting>
+        <setting type="string" name="skin.xonfluence.UsrSelectAddon">plugin.video.xmovies8</setting>
         <setting type="string" name="skin.xonfluence.StreamingMediaPath"></setting>
         <setting type="string" name="skin.xonfluence.WeatherScript_Label"></setting>
         <setting type="string" name="skin.xonfluence.MediaPopupControl"></setting>
@@ -2039,6 +2162,7 @@
         <setting type="string" name="skin.xonfluence.HomeProgramButton3"></setting>
         <setting type="string" name="skin.xonfluence.HomeProgramButton4"></setting>
         <setting type="string" name="skin.xonfluence.HomeProgramButton5"></setting>
+		
     </skinsettings>
     <viewstates>
         <musicfiles>
