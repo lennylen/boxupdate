@@ -1461,7 +1461,7 @@
         <setting type="string" name="skin.confluence.SkinHelper.CustomStudioImagesPath"></setting>
         <setting type="string" name="skin.confluence.hwy2015.SkinHelper.ForcedViews.programs"></setting>
         <setting type="string" name="skin.confluence.hwy2015.SkinHelper.ForcedViews."></setting>
-        <setting type="string" name="skin.xonfluence.UsrColorOne"></setting>
+        <setting type="string" name="skin.xonfluence.UsrColorOne">aliceblue</setting>
         <setting type="string" name="skin.xonfluence.MediaPanelTrans"></setting>
         <setting type="string" name="skin.xonfluence.GlobalBackGroundPath"></setting>
         <setting type="string" name="skin.xonfluence.HolidayThemePath">special://skin/extras/Holiday/xmastree.jpg</setting>
