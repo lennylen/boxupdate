@@ -1130,7 +1130,7 @@
         <setting type="bool" name="skin.xonfluence.KioskMode">false</setting>
         <setting type="bool" name="skin.xonfluence.HideSystemTime">false</setting>
         <setting type="bool" name="skin.xonfluence.AutoFocusUnwatchedEpisode">false</setting>
-        <setting type="bool" name="skin.xonfluence.InitialSetUpRun">true</setting>
+        <setting type="bool" name="skin.xonfluence.InitialSetUpRun">false</setting>
         <setting type="bool" name="skin.xonfluence.Updates_V312">true</setting>
         <setting type="bool" name="skin.xonfluence.Updates_V314">true</setting>
         <setting type="bool" name="skin.xonfluence.EnableHomeStats">false</setting>
@@ -1873,7 +1873,7 @@
         <setting type="string" name="skin.xonfluence.AddonSetThree.1.Path">ActivateWindow(10025,&quot;plugin://plugin.video.genesis/?action=tvNavigator&quot;,return)</setting>
         <setting type="string" name="skin.xonfluence.AddonSetThree.2.Label">Stream All The Sources</setting>
         <setting type="string" name="skin.xonfluence.AddonSetThree.2.Icon">special://home/addons/plugin.video.salts\icon.png</setting>
-        <setting type="string" name="skin.xonfluence.AddonSetThree.2.Path">RunAddon(plugin.video.salts)</setting>
+        <setting type="string" name="skin.xonfluence.AddonSetThree.2.Path">ActivateWindow(10025,&quot;plugin://plugin.video.salts/?mode=browse&amp;section=TV&quot;,return)</setting>
         <setting type="string" name="skin.xonfluence.AddonSetThree.3.Label">1Channel</setting>
         <setting type="string" name="skin.xonfluence.AddonSetThree.3.Icon">special://home/addons/plugin.video.1channel\icon.png</setting>
         <setting type="string" name="skin.xonfluence.AddonSetThree.3.Path">RunAddon(plugin.video.1channel)</setting>
