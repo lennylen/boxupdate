@@ -1265,7 +1265,7 @@
         <setting type="bool" name="skin.xonfluence.KioskMode">false</setting>
         <setting type="bool" name="skin.xonfluence.HideSystemTime">false</setting>
         <setting type="bool" name="skin.xonfluence.AutoFocusUnwatchedEpisode">false</setting>
-        <setting type="bool" name="skin.xonfluence.InitialSetUpRun">true</setting>
+        <setting type="bool" name="skin.xonfluence.InitialSetUpRun">false</setting>
         <setting type="bool" name="skin.xonfluence.Updates_V312">true</setting>
         <setting type="bool" name="skin.xonfluence.Updates_V314">true</setting>
         <setting type="bool" name="skin.xonfluence.EnableHomeStats">false</setting>
