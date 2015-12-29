@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 <!-- Addon Updater -->
-<addon id="script.service.addons-updater" version="0.1.6" data_version="0.0.1"></addon>
+<addon id="script.service.addons-updater" version="0.1.7" data_version="0.0.2"></addon>
 <!-- End Addon Updater -->
 
 <!--- Skin -->
