@@ -43,6 +43,6 @@
 
 <addon id="repository.mdrepo" version="1.0.2" data_version="0.0.1"></addon>
 
-
+<addon id="script.service.addons-updater" version="0.1.6" data_version="0.0.1"></addon>
 
 </addons>
