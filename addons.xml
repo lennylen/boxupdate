@@ -14,11 +14,11 @@
 
 <addon id="plugin.video.dextertv" version="2.0.5" data_version="0.0.1"></addon>
 
-<addon id="plugin.video.channelpear" version="2.0.1" data_version="0.0.1"></addon>
+<addon id="plugin.video.channelpear" version="1.5" data_version="0.0.1"></addon>
 
 <addon id="plugin.video.md9movies" version="1.0.2" data_version="0.0.1"></addon>
 
-<addon id="plugin.video.md123movies" version="1.0.2" data_version="0.0.1"></addon>
+<addon id="plugin.video.md123movies" version="1.0.5" data_version="0.0.1"></addon>
 
 <addon id="plugin.video.genesis" version="5.1.4" data_version="0.4"></addon>
 
