@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <files>
+<<<<<<< HEAD
 <file name="guisettings.xml" version="0.8.5"></file> 
 
 <file name="advancedsettings.xml" version="0.0.1"></file> 
+=======
+    <file name="guisettings.xml" version="0.8.5"></file>
+    <file name="keymaps/mouse.xml" version="0.1.1"></file>
+>>>>>>> origin/master
 </files>
