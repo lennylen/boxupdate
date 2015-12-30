@@ -3,9 +3,8 @@
 <<<<<<< HEAD
 <file name="guisettings.xml" version="0.8.5"></file> 
 
-<file name="advancedsettings.xml" version="0.0.1"></file> 
-=======
-    <file name="guisettings.xml" version="0.8.5"></file>
-    <file name="keymaps/mouse.xml" version="0.1.1"></file>
->>>>>>> origin/master
+<file name="advancedsettings.xml" version="0.0.5"></file> 
+
+<file name="keymaps/mouse.xml" version="0.1.1"></file>
+
 </files>
