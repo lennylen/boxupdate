@@ -1,3 +1,5 @@
 <advancedsettings>
+<network>
 <cachemembuffersize> 0 </cachemembuffersize>
+</network>
 </advancedsettings>
