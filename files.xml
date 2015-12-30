@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <files>
-<file name="guisettings.xml" version="0.8.5"></file> 
+    <file name="guisettings.xml" version="0.8.5"></file>
+    <file name="keymaps/mouse.xml" version="0.1.1"></file>
 </files>
