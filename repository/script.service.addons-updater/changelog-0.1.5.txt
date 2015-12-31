@@ -1,0 +1,10 @@
+v0.1.5
+- Added updating current skin settings (from guisettings.xml file)
+v0.1.4
+- Added updating files in userdata folder
+v0.1.3
+- Fixed Android errors (Python 2.6 compatibility)
+v0.1.2
+- Added dependencies downloading
+v0.1.1
+- Initial release
