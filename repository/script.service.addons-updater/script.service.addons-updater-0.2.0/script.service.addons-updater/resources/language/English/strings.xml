@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="30001">General</string>
+    <string id="30002">Enabled</string>
+    <string id="30003">Addons list (addons.xml) path</string>
+    <string id="30004">Addons files (.zip) path</string>
+    <string id="30005">Addons additional data path</string>
+    <string id="30006">Files list (files.xml)</string>
+    <string id="30007">Files (userdata) path</string>
+</strings>

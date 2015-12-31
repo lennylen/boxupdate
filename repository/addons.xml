@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="script.service.addons-updater" name="Addons Updater" version="0.1.9" provider-name="kharts">
+    <addon id="script.service.addons-updater" name="Addons Updater" version="0.2.0" provider-name="kharts">
       <requires>
         <import addon="xbmc.python" version="2.1.0"/>
       </requires>

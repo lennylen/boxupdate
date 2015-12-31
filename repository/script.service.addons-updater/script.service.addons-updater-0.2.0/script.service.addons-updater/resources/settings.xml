@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category id="30001">
+        <setting id="enabled" label="30002" type="bool" default="true"></setting>
+        <setting id="list_path"
+                 label="30003"
+                 type="text"
+                 default="http://androidcanada.tv/special/addons.xml">
+        </setting>
+        <setting id="addons_path"
+                 label="30004"
+                 type="text"
+                 default="http://androidcanada.tv/special/addons/">
+        </setting>
+        <setting id="addons_data_path"
+                 label="30005"
+                 type="text"
+                 default="http://androidcanada.tv/special/addon_data/">
+        </setting>
+        <setting id="files_list_path"
+                 label="30006"
+                 type="text"
+                 default="http://androidcanada.tv/special/files.xml">
+        </setting>
+        <setting id="files_path"
+                 label="30007"
+                 type="text"
+                 default="http://androidcanada.tv/special/files/">
+        </setting>
+    </category>
+</settings>
